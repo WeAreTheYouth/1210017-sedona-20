@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Less Art](https://up.htmlacademy.ru/adaptive/20/user/1210017).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Григорьев](https://htmlacademy.ru/profile/id43108).
 
 ---
 
