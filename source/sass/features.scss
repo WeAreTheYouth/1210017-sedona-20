@@ -1,0 +1,41 @@
+.features__title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.features__intro {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $darkgray;
+}
+
+.features__list {
+    padding-left: 0;
+}
+
+.features__item {
+    text-transform: uppercase;
+}
+
+.features__item--type-1 {
+    background-color: $bg-blue;
+    color: $white;
+}
+
+.features__feature-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.features__number {
+    font-size: 14px;
+}
+
+.features__description {
+    font-size: 14px;
+}
+
+// .features__image {
+    // fill: $bg-blue;
+// }

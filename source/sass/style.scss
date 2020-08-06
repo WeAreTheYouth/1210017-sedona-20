@@ -1,1 +1,77 @@
-// Начните писать стили здесь
+/* Colors */
+
+$bg-blue: #81B3D2;
+$bg-blue-hover: #669EC0;
+$bg-blue-focus: #5496BD;
+$white: #FFFFFF;
+$darkgray: #333333;
+
+/* Fonts */
+
+@font-face {
+    font-family: "PT Sans";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src:
+      url("../fonts/ptsans.woff2") format("woff2"),
+      url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    src:
+      url("../fonts/ptsansbold.woff2") format("woff2"),
+      url("../fonts/ptsansbold.woff") format("woff");
+}
+
+body {
+  font-family: PT Sans;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+  
+a {
+    text-decoration: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+ol {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@import "../sass/page-header.scss";
+@import "../sass/features.scss";
+@import "../sass/booking.scss";
+@import "../sass/page-footer.scss";
+
+@import "../sass/intro.scss";
+@import "../sass/gallery.scss";
+@import "../sass/video.scss";
+
+@import "../sass/review.scss";
