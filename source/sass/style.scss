@@ -4,7 +4,10 @@ $bg-blue: #81B3D2;
 $bg-blue-hover: #669EC0;
 $bg-blue-focus: #5496BD;
 $white: #FFFFFF;
+$grey: #EEEEEE;
 $darkgray: #333333;
+$black: #000000;
+
 
 /* Fonts */
 
@@ -28,9 +31,13 @@ $darkgray: #333333;
       url("../fonts/ptsansbold.woff") format("woff");
 }
 
-body {
-  font-family: PT Sans;
-}
+/* Viewports */
+
+$tablet-width: 768px;
+$desktop-width: 1280px;
+$mobile-width-only: 767px;
+
+/* Common */
 
 img {
     max-width: 100%;
@@ -65,6 +72,9 @@ ol {
     overflow: hidden;
 }
 
+/* Import */
+
+@import "../sass/page.scss";
 @import "../sass/page-header.scss";
 @import "../sass/features.scss";
 @import "../sass/booking.scss";

@@ -1,3 +1,18 @@
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    @media (min-width: $mobile-width-only) {
+        flex-direction: row;
+    }
+}
+
+.page-footer__copyright {
+    display: flex;
+}
+
 .page-footer__hash {
     font-size: 21px;
     font-weight: bold;
