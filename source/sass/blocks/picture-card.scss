@@ -1,0 +1,41 @@
+.picture-card {
+    position: relative;
+}
+
+@media (max-width: $mobile-width-only) {
+    .picture-card {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .picture-card-description {
+        width: 100%;
+        background-color: #f2f2f2;
+    }
+    .picture-card {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .picture-card-description {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+.picture-card__title {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.picture-card__author {
+    font-size: 14px;
+    color: $darkgray;
+}

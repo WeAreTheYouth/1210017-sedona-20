@@ -1,0 +1,20 @@
+.page-footer__copyright {
+    display: flex;
+}
+
+.copyright__text {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.copyright__link {
+    &:hover {
+        fill: $bg-blue;
+    }
+    &:focus {
+        fill: $bg-blue;
+    }
+    &:active {
+        fill: rgba(0, 0, 0, 0.3);
+    }
+}

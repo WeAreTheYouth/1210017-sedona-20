@@ -1,0 +1,141 @@
+.main-nav {
+    position: relative;
+}
+
+.main-nav__toggle {
+    display: none;
+}
+
+@media (min-width: $tablet-width) {
+    .main-nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: $mobile-width-only) {
+    .main-nav__toggle {
+        display: block;
+    }
+}
+
+.page-header__logo {
+    position: absolute;
+    left:50%;
+    margin-left: -51px;
+
+}
+
+@media (max-width: $mobile-width-only) {
+    .page-header__logo {
+        bottom: -80px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .page-header__logo {
+        top: 0;
+    }
+}
+
+.main-nav__list {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+@media (max-width: $mobile-width-only) {
+    .main-nav__list {
+        flex-direction: column;
+    
+    }
+}
+
+.main-nav__item {
+
+}
+
+@media (max-width: $mobile-width-only) {
+    .main-nav__item {
+        padding: 10px 14px 10px 14px;
+        background-color: $bg-blue;
+        box-shadow: 0px 0px 1px 0px rgba(1, 1, 1, 0.2);
+        & a {
+            color: $white;
+            &:hover {
+                background-color: $bg-blue-hover;
+            }
+            &:focus {
+                background-color: $bg-blue-focus;
+            }  
+        }
+    }
+}
+
+
+
+
+
+
+
+// .main-nav {
+//     ...
+// }
+
+// .main-nav__list {
+//     ...
+// }
+
+// .main-nav__item {
+//     ...
+// }
+
+// @media (max-width: $mobile-width-only) {
+//     /*стилей почти нет*/
+//     .main-nav {
+//         ...
+//     }
+    
+//     .main-nav__list {
+//         ...
+//     }
+    
+//     .main-nav__item {
+//         ...
+//     }
+// }
+
+// @media (min-width: $tablet-width) {
+//     /*здесь переопределяем мобильные стили*/
+//     .main-nav {
+//         ...
+//     }
+    
+//     .main-nav__list {
+//         ...
+//     }
+    
+//     .main-nav__item {
+//         ...
+//     }
+// }
+
+// @media (min-width: $desktop-width) {
+//     /*здесь переопределяем стили планшета, здесь почти ничего нет*/
+//     .main-nav {
+//         ...
+//     }
+    
+//     .main-nav__list {
+//         ...
+//     }
+    
+//     .main-nav__item {
+//         ...
+//     }
+// }
