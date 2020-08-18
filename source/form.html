@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона - Форма</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -13,14 +14,14 @@
 
       <header class="page-header">
         <nav class="main-nav">
-          <div>
-            <a class="page-header__logo" href="index.html">
+          <div class="main-nav__row">
+            <a class="page-header__logo">
               <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Sedona">
             </a>
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
           </div>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="main-nav__list main-nav__list--shown">
             <li class="main-nav__item main-nav__item--active">
               <a href="index.html">Главная</a>
@@ -50,7 +51,104 @@
               Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
             </p>
           </div>
-          <div class="review__main"></div>
+          <section class="review__main">
+            <form class="review__form" action="https://echo.htmlacademy.ru" method="get">
+              <fieldset class="form__introduce">
+                <legend class="form-title form-title--introduce">Представьтесь:</legend>
+                <div>
+                  <label class="form__introduce-label" for="firstname">Имя*</label>
+                  <div class="text-input">
+                    <input class="form__introduce-input" type="text" name="firstname" id="firstname" placeholder="Петр">
+                  </div>
+                  <label class="form__introduce-label" for="lastname">Фамилия*</label>
+                  <div class="text-input">
+                    <input class="form__introduce-input" type="text" name="lastname" id="lastname" placeholder="Иванов">
+                  </div>
+                  <label class="form__introduce-label" for="patronymic">Отчество</label>
+                  <div class="text-input">
+                    <input class="form__introduce-input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="form__contacts">
+                <legend class="form-title form-title--contacts">Контактная информация:</legend>
+                <div class="form__contacts--phone">
+                  <label for="phone">Контактный телефон*:</label>
+                  <div class="text-input">
+                    <input type="tel" name="phone" id="phone" placeholder="Введите телефон">
+                    <div>
+                      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                        <g id="Page-1">
+                          <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+                            <g id="phone" transform="translate(85.000000, 126.000000)">
+                              <path id="Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"/>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>  
+                </div>
+                <div class="form__contacts--phone">
+                  <label for="email">Электронная почта*:</label>
+                  <div class="text-input">
+                    <input type="email" name="email" id="email" placeholder="Введите e-mail">
+                    <div>
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                        <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
+                      </svg>
+                    </div>
+                  </div>  
+                </div>
+              </fieldset>
+              <fieldset class="form__impressions">
+                <legend class="form-title form-title--impressions">Ваше общее впечатление:</legend>
+                <ul>
+                  <li>
+                    <input class="review__form-radio-input" type="radio" name="impressions" value="positive" id="filter-positive" checked>
+                    <label class="form__impressions-label" for="filter-positive">Скорее положительное</label>
+                  </li>
+                  <li>
+                    <input class="review__form-radio-input" type="radio" name="impressions" value="negative" id="filter-negative">
+                    <label class="form__impressions-label" for="filter-negative">Скорее отрицательное</label>
+                  </li>
+                  <li>
+                    <input class="review__form-radio-input" type="radio" name="impressions" value="uncertain" id="filter-uncertain">
+                    <label class="form__impressions-label" for="filter-uncertain">Затрудняюсь ответить</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__attractions">
+                <legend class="form-title form-title--attractions">Посещенные достопримечательности:</legend>
+                <ul>
+                  <li>
+                    <input class="review__form-check-input" type="checkbox" name="bridge" id="filter-bridge" checked>
+                    <label class="review__form-check-label" for="filter-bridge">Мост Дьявола</label>
+                  </li>
+                  <li>
+                    <input class="review__form-check-input" type="checkbox" name="mountain" id="filter-mountain" checked>
+                    <label class="review__form-check-label" for="filter-mountain">Гора-Колокол</label>
+                  </li>
+                  <li>
+                    <input class="review__form-check-input" type="checkbox" name="park" id="filter-park" checked>
+                    <label class="review__form-check-label" for="filter-park">Слайд-парк</label>
+                  </li>
+                  <li>
+                    <input class="review__form-check-input" type="checkbox" name="rocks" id="filter-rocks">
+                    <label class="review__form-check-label" for="filter-rocks">Красные скалы</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__emotion">
+                <legend class="form-title form-title--emotion">Опишите свои эмоции:</legend>
+                <div class="text-input">
+                  <textarea name="emotion" id="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
+                </div>
+              </fieldset>
+              <button class="button" type="submit">Отправить отзыв</button>
+              <span>* — обязательные поля</span>
+            </form>
+          </section>
         </section>
 
         <footer class="page-footer">

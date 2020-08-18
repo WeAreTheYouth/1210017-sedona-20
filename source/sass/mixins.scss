@@ -1,0 +1,23 @@
+.button {
+    display: block;
+    color: $white;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: $bg-blue;
+    padding-top: 14px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 18px;
+    margin: 0 auto;
+    outline: none;
+    border: 0;
+}
+
+@media (min-width: $tablet-width) {
+    .button {
+        padding-left: 121px;
+        padding-right: 121px;
+    }
+}

@@ -1,27 +1,36 @@
 .picture-card {
     position: relative;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-@media (max-width: $mobile-width-only) {
+@media (min-width: $tablet-width) {
     .picture-card {
-        display: flex;
-        flex-direction: column-reverse;
+        padding-left: 0;
+        padding-right: 0;
     }
+}
+
+.picture-card-image img {
+    display: block;
+}
+
+.picture-card-description {
+    padding-top: 11px;
+    padding-bottom: 15px;
 }
 
 @media (min-width: $tablet-width) {
     .picture-card-description {
-        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
         background-color: #f2f2f2;
-    }
-    .picture-card {
-        display: flex;
-        flex-direction: column-reverse;
     }
 }
 
 @media (min-width: $desktop-width) {
     .picture-card-description {
+        box-sizing: border-box;
         width: 100%;
         position: absolute;
         bottom: 0;
@@ -30,12 +39,36 @@
 }
 
 .picture-card__title {
-    font-weight: bold;
     font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .picture-card__author {
     font-size: 14px;
+    line-height: 24px;
     color: $darkgray;
+    margin: 0;
+}
+
+.picture-likes {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+@media (min-width: $desktop-width) {
+    .picture-card__title {
+        color: $white;
+    }
+
+    .picture-card__author {
+        color: $white;
+    }
+
+    .picture-likes {
+        color: $white;
+    }
 }

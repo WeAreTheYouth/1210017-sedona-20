@@ -1,9 +1,11 @@
-.page-footer__copyright {
+.copyright {
     display: flex;
+    align-items: center;
 }
 
 .copyright__text {
     font-size: 14px;
+    line-height: 26px;
     text-transform: uppercase;
 }
 
@@ -11,9 +13,11 @@
     &:hover {
         fill: $bg-blue;
     }
+
     &:focus {
         fill: $bg-blue;
     }
+    
     &:active {
         fill: rgba(0, 0, 0, 0.3);
     }
