@@ -1,0 +1,140 @@
+.review__header {
+    padding-top: 36px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 16px;
+}
+
+.review__title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.review__intro {
+    color: $darkgray;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+    .review__header {
+        padding-top: 65px;
+        padding-left: 22%;
+        padding-right: 22%;
+        padding-bottom: 62px;
+    }
+
+    .review__title {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .review__header {
+        padding-top: 114px;
+        padding-left: 32%;
+        padding-right: 32%;
+        padding-bottom: 56px;
+    }
+}
+
+
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.form {
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+}
+
+@media (min-width: $tablet-width) {
+    .form {
+        padding-left: 7.82%;
+        padding-right: 7.82%;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .form {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+.form__item-title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+    .form__item-title {
+        font-size: 21px;
+    }
+}
+
+
+
+
+
+
+
+
+.entry-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.entry-field--contacts {
+    flex-direction: column;
+}
+
+.entry-field-title{
+    color: $darkgray;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.entry-field-title--contacts {
+    padding-left: 4.29%;
+}
+
+.radio,
+.checkbox {
+    padding: 0;
+    margin: 0;
+}
+
+.radio__item-input,
+.checkbox__item-input {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+
+
+.form__memo {
+    color: $darkgray;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+@media (max-width: $mobile-width-only) {
+    .form__memo {
+        display: none;
+    }
+}

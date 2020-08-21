@@ -1,0 +1,163 @@
+.main-nav {
+    position: relative;
+}
+
+@media (max-width: $mobile-width-only) {
+    .main-nav {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .main-nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.page-header__logo {
+    position: absolute;
+    left:50%;
+    margin-left: -51px;
+}
+
+.main-nav__toggle {
+    display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+    .main-nav__row {
+        height: 56px;
+    }
+
+    .page-header__logo {
+        bottom: -33px;
+    }
+
+    .main-nav__toggle {
+        display: block;
+        position: absolute;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .page-header__logo {
+        top: 0;
+    }
+}
+
+.main-nav__list {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media (max-width: $mobile-width-only) {
+    .main-nav__list {
+        flex-direction: column;
+        font-size: 18px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: $mobile-width-only) {
+    .main-nav__item {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        background-color: $bg-blue;
+        box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+        & a {
+            color: $white;
+            &:hover {
+                background-color: $bg-blue-hover;
+            }
+            &:focus {
+                background-color: $bg-blue-focus;
+            }  
+        }
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .main-nav__item {
+        padding-top: 16px;
+        padding-bottom: 14px;
+        & a {
+            color: $black;
+            &:hover {
+                color: $bg-blue;
+            }
+            &:focus {
+                color: rgba(0, 0, 0, 0.3) ;
+            }  
+        }
+    }
+}
+
+
+
+
+
+// .main-nav {
+//     ...
+// }
+
+// .main-nav__list {
+//     ...
+// }
+
+// .main-nav__item {
+//     ...
+// }
+
+// @media (max-width: $mobile-width-only) {
+//     /*стилей почти нет*/
+//     .main-nav {
+//         ...
+//     }
+    
+//     .main-nav__list {
+//         ...
+//     }
+    
+//     .main-nav__item {
+//         ...
+//     }
+// }
+
+// @media (min-width: $tablet-width) {
+//     /*здесь переопределяем мобильные стили*/
+//     .main-nav {
+//         ...
+//     }
+    
+//     .main-nav__list {
+//         ...
+//     }
+    
+//     .main-nav__item {
+//         ...
+//     }
+// }
+
+// @media (min-width: $desktop-width) {
+//     /*здесь переопределяем стили планшета, здесь почти ничего нет*/
+//     .main-nav {
+//         ...
+//     }
+    
+//     .main-nav__list {
+//         ...
+//     }
+    
+//     .main-nav__item {
+//         ...
+//     }
+// }

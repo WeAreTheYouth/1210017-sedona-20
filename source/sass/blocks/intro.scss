@@ -1,0 +1,9 @@
+.intro {
+    height: 389px;
+}
+
+@media (min-width: $tablet-width) {
+    .intro {
+        height: 518px;
+    }
+}
