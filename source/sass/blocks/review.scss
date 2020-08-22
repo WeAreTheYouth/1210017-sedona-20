@@ -58,8 +58,22 @@ fieldset {
 
 @media (min-width: $tablet-width) {
     .form {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
         padding-left: 7.82%;
         padding-right: 7.82%;
+    }
+
+    .form__item--type-3 {
+        order: -1;
+    }
+
+    .form__item--type-2,
+    .form__item--type-4,
+    .form__item--type-5 {
+        width: 100%;
     }
 }
 
@@ -69,6 +83,13 @@ fieldset {
         padding-right: 10%;
     }
 }
+
+.form__item {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+
 
 .form__item-title {
     font-size: 18px;
@@ -94,6 +115,11 @@ fieldset {
 .entry-field {
     display: flex;
     justify-content: space-between;
+    padding-top: 20px;
+}
+
+.entry-field--introduce {
+    align-items: center;
 }
 
 .entry-field--contacts {
@@ -107,8 +133,27 @@ fieldset {
     text-transform: uppercase;
 }
 
+
+
+
+
 .entry-field-title--contacts {
     padding-left: 4.29%;
+}
+
+.entry-field-input {
+    flex-grow: 1;
+    color: $black;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    height: 58px;
+    background-color: $lightgray;
+    padding-left: 22px;
+
 }
 
 .radio,
@@ -117,12 +162,47 @@ fieldset {
     margin: 0;
 }
 
-.radio__item-input,
-.checkbox__item-input {
+@media (min-width: $tablet-width) {
+    .checkbox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 15.44%;
+        padding-right: 15.44%;
+    }
+
+    .checkbox__item {
+        width: 200px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .checkbox {
+        justify-content: space-between;
+        flex-wrap: no-wrap;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+
+
+.radio__item-label,
+.checkbox__item-label {
     font-size: 18px;
     line-height: 26px;
     font-weight: bold;
+    padding-left: 20px;
 }
+
+
+.entry-field-input--textarea {
+    width: 100%;
+    height: 160px;
+    resize: none;
+}
+
 
 
 
