@@ -49,6 +49,16 @@
     margin: 0;
 }
 
+@media (max-width: $mobile-width-only) {
+    .features__list li:first-child {
+        background-image: url(../../img/bg-triangle.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
 @media (min-width: $tablet-width) {
     .features__list {
         display: grid;
