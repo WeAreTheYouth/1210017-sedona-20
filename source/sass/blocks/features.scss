@@ -152,16 +152,6 @@
         padding-left: 69px;
         text-align: left;
     }
-
-    .features__item {
-        position: relative;
-    }
-
-    .features__image {
-        top: 12px;
-        left: 21px;
-        position: absolute;
-    }
 }
 
 @media (min-width: $tablet-width) {
@@ -171,14 +161,75 @@
         padding-right: 14%;
     }
 
-    .features__image {
-        order: -1;
-    }
-
     .features__description {
         text-align: center;
     }
 }
+
+.features__item--house {
+    background-image: url(../../img/icon-house.svg);
+    background-repeat: no-repeat;
+    background-position: 21px 26px;
+    background-size: 39px 37px;
+}
+
+@media (min-width: $tablet-width) {
+    .features__item--house {
+        background-position: 90px 44px;
+        background-size: 75px 72px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .features__item--house {
+        background-position: 161px 53px;
+    }
+}
+
+.features__item--gift {
+    background-image: url(../../img/icon-gift.svg);
+    background-repeat: no-repeat;
+    background-position: 25px 24px;
+    background-size: 32px 38px;
+}
+
+@media (min-width: $tablet-width) {
+    .features__item--gift {
+        background-position: 95px 41px;
+        background-size: 64px 75px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .features__item--gift {
+        background-position: 166px 51px;
+    }
+}
+
+.features__item--burger {
+    background-image: url(../../img/icon-burger.svg);
+    background-repeat: no-repeat;
+    background-position: 18px 30px;
+    background-size: 40px 35px;
+}
+
+@media (min-width: $tablet-width) {
+    .features__item--burger {
+        background-position: 89px 47px;
+        background-size: 76px 68px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .features__item--burger {
+        background-position: 161px 58px;
+    }
+}
+
+
+
+
+
 
 .features__item--type-2 .features__feature-title {
     padding-top: 35px;
@@ -188,6 +239,20 @@
     padding-top: 20px;
     padding-bottom: 26px;
 }
+
+@media (min-width: $tablet-width) {
+    .features__item--type-2 .features__feature-title {
+        padding-top: 141px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .features__item--type-2 .features__feature-title {
+        padding-top: 152px;
+    }
+}
+
+
 
 .features__item--type-3 {
     background-color: $grey;

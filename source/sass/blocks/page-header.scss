@@ -22,6 +22,7 @@
     margin-left: -51px;
 }
 
+
 .main-nav__toggle {
     display: none;
 }
@@ -49,7 +50,6 @@
 
 .main-nav__list {
     display: flex;
-    justify-content: space-around;
     padding-left: 0;
     margin: 0;
     font-size: 14px;
@@ -66,9 +66,18 @@
     }
 }
 
+@media (min-width: $tablet-width) {
+    .main-nav__list li {
+        width: 20%;
+    }
+}
+
+.main-nav__item {
+    text-align: center;
+}
+
 @media (max-width: $mobile-width-only) {
     .main-nav__item {
-        text-align: center;
         padding-top: 10px;
         padding-bottom: 5px;
         background-color: $bg-blue;
@@ -100,64 +109,3 @@
         }
     }
 }
-
-
-
-
-
-// .main-nav {
-//     ...
-// }
-
-// .main-nav__list {
-//     ...
-// }
-
-// .main-nav__item {
-//     ...
-// }
-
-// @media (max-width: $mobile-width-only) {
-//     /*стилей почти нет*/
-//     .main-nav {
-//         ...
-//     }
-    
-//     .main-nav__list {
-//         ...
-//     }
-    
-//     .main-nav__item {
-//         ...
-//     }
-// }
-
-// @media (min-width: $tablet-width) {
-//     /*здесь переопределяем мобильные стили*/
-//     .main-nav {
-//         ...
-//     }
-    
-//     .main-nav__list {
-//         ...
-//     }
-    
-//     .main-nav__item {
-//         ...
-//     }
-// }
-
-// @media (min-width: $desktop-width) {
-//     /*здесь переопределяем стили планшета, здесь почти ничего нет*/
-//     .main-nav {
-//         ...
-//     }
-    
-//     .main-nav__list {
-//         ...
-//     }
-    
-//     .main-nav__item {
-//         ...
-//     }
-// }
