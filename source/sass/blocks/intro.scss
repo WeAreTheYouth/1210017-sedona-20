@@ -10,12 +10,14 @@
     .intro {
         height: 518px;
         background-image: url(../../img/bg-intro-triangle-tablet.svg), url(../../img/bg-back-tablet@1x.jpg);
+        background-size: 768px, cover;
     }
 }
 
 @media (min-width: $desktop-width) {
     .intro {
         background-image: url(../../img/bg-intro-triangle-desktop.svg),url(../../img/bg-back-desktop@1x.jpg);
+        background-size: 1200px, cover;
     }
 }
 
@@ -43,3 +45,6 @@
         margin-left: -231px;
     }
 }
+
+
+
