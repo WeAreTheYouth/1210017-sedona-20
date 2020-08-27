@@ -115,9 +115,9 @@
     margin: 0;
 }
 
-// .features__item-pic img {
-//     display: block;
-// }
+.features__item-pic img {
+    display: block;
+}
 
 @media (max-width: $mobile-width-only) {
     .features__list li:first-child {
@@ -130,6 +130,15 @@
         padding-left: 69px;
         text-align: left;
     }
+
+    .features__item--type-3 {
+        border-bottom: 1px solid #D6D6D6;
+    }
+
+    .features__list li:last-child {
+        border: none;
+    }
+
 }
 
 @media (min-width: $tablet-width) {
