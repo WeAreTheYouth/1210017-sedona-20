@@ -59,7 +59,7 @@
                   <div class="picture-card-description">
                     <h3 class="picture-card__title">Неродные просторы</h3>
                     <p class="picture-card__author">Автор фото: Борис</p>
-                    <p class="picture-likes">1350</p>
+                    <button class="picture-likes" type="button"><span class="likes-number">1350</span></button>
                   </div>
                   <div class="picture-card-image">
                     <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
@@ -71,7 +71,7 @@
                   <div class="picture-card-description">
                     <h3 class="picture-card__title">Местная растительность</h3>
                     <p class="picture-card__author">Автор фото: Сергей</p>
-                    <p class="picture-likes">143</p>
+                    <button class="picture-likes" type="button"><span class="likes-number">143</span></button>
                   </div>
                   <div class="picture-card-image">
                     <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
@@ -83,7 +83,7 @@
                   <div class="picture-card-description">
                     <h3 class="picture-card__title">Дорога на север</h3>
                     <p class="picture-card__author">Автор фото: Петр</p>
-                    <p class="picture-likes">96</p>
+                    <button class="picture-likes" type="button"><span class="likes-number">96</span></button>
                   </div>
                   <div class="picture-card-image">
                     <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
@@ -95,7 +95,7 @@
                   <div class="picture-card-description">
                     <h3 class="picture-card__title">Мост дьявола</h3>
                     <p class="picture-card__author">Автор фото: Антон</p>
-                    <p class="picture-likes">254</p>
+                    <button class="picture-likes" type="button"><span class="likes-number">254</span></button>
                   </div>
                   <div class="picture-card-image">
                     <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
@@ -189,5 +189,21 @@
 
       </main>
     </div>
+
+    <script>
+      var heart = document.querySelector('.picture-likes');
+      var likesNumber = document.querySelector('.likes-number');
+
+      heart.onclick = function () {
+        if (heart.classList.contains('picture-likes--add')) {
+          likesNumber.textContent--;
+        } else {
+          likesNumber.textContent++;
+        }
+  
+        heart.classList.toggle('picture-likes--add');
+      };
+    </script>  
+
   </body>
 </html>
