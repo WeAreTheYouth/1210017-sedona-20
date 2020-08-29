@@ -22,11 +22,11 @@
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="main-nav__list main-nav__list--shown">
+          <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
               <a>Фото и видео</a>
             </li>
             <li></li>
@@ -66,7 +66,7 @@
                   </div>
                 </article>
               </li>
-              <li class="gallery__item"> 
+              <li class="gallery__item">
                 <article class="picture-card">
                   <div class="picture-card-description">
                     <h3 class="picture-card__title">Местная растительность</h3>
@@ -189,6 +189,24 @@
 
       </main>
     </div>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+      var navList = document.querySelector('.main-nav__list');
+
+      navMain.classList.remove('main-nav--nojs');
+      
+      navToggle.addEventListener('click', function() {
+        if (navList.classList.contains('main-nav__list--shown')) {
+          navList.classList.remove('main-nav__list--shown');
+          navMain.classList.remove('main-nav--closed');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navList.classList.add('main-nav__list--shown');
+        }
+      });
+    </script>
 
     <script>
       var heart = document.querySelector('.picture-likes');

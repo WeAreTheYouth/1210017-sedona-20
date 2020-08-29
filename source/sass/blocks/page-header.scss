@@ -55,26 +55,8 @@
         right: 19px;
         top: 16px;
         left: auto;
-      
-        &::before,
-        &::after {
-          content: "";
-          position: absolute;
-          right: -2px;
-          top: 10px;
-          width: 27px;
-          height: 4px;
-          background-color: $white;
-        }
-      
-        &::before {
-          transform: rotate(45deg);
-          box-shadow: none;
-        }
-      
-        &::after {
-          transform: rotate(-45deg);
-        }
+        background-image: url(../../img/icon-cross.svg);
+        fill: $white;
       
         &:hover::before,
         &:focus::after {
