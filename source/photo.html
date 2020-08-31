@@ -16,7 +16,11 @@
         <nav class="main-nav">
           <div class="main-nav__row">
             <a class="page-header__logo">
-              <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Sedona">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img class="page-header__img" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Sedona">
+              </picture>
             </a>
           </div>
           <button class="main-nav__toggle" type="button">
@@ -59,10 +63,21 @@
                   <div class="picture-card-description">
                     <h3 class="picture-card__title">Неродные просторы</h3>
                     <p class="picture-card__author">Автор фото: Борис</p>
-                    <button class="picture-likes" type="button"><span class="likes-number">1350</span></button>
+                    <p class="picture-likes">
+                      <a class="likes-icon">
+                        <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+                        </svg>
+                      </a>
+                      <span class="likes-number">1350</span>
+                    </p>
                   </div>
                   <div class="picture-card-image">
-                    <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+                    <picture>
+                      <source media="(min-width: 1280px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                      <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="100%" alt="Неродные просторы">
+                    </picture>
                   </div>
                 </article>
               </li>
@@ -71,10 +86,21 @@
                   <div class="picture-card-description">
                     <h3 class="picture-card__title">Местная растительность</h3>
                     <p class="picture-card__author">Автор фото: Сергей</p>
-                    <button class="picture-likes" type="button"><span class="likes-number">143</span></button>
+                    <p class="picture-likes">
+                      <a class="likes-icon">
+                        <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+                        </svg>
+                      </a>
+                      <span class="likes-number">143</span>
+                    </p>
                   </div>
                   <div class="picture-card-image">
-                    <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+                    <picture>
+                      <source media="(min-width: 1280px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                      <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="100%" alt="Местная растительность">
+                    </picture>
                   </div>
                 </article>
               </li>
@@ -83,10 +109,21 @@
                   <div class="picture-card-description">
                     <h3 class="picture-card__title">Дорога на север</h3>
                     <p class="picture-card__author">Автор фото: Петр</p>
-                    <button class="picture-likes" type="button"><span class="likes-number">96</span></button>
+                    <p class="picture-likes">
+                      <a class="likes-icon">
+                        <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+                        </svg>
+                      </a>
+                      <span class="likes-number">96</span>
+                    </p>
                   </div>
                   <div class="picture-card-image">
-                    <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+                    <picture>
+                      <source media="(min-width: 1280px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                      <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="100%" alt="Дорога на север">
+                    </picture>
                   </div>
                 </article>
               </li>
@@ -95,10 +132,21 @@
                   <div class="picture-card-description">
                     <h3 class="picture-card__title">Мост дьявола</h3>
                     <p class="picture-card__author">Автор фото: Антон</p>
-                    <button class="picture-likes" type="button"><span class="likes-number">254</span></button>
+                    <p class="picture-likes">
+                      <a class="likes-icon">
+                        <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+                        </svg>
+                      </a>
+                      <span class="likes-number">254</span>
+                    </p>
                   </div>
                   <div class="picture-card-image">
-                    <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+                    <picture>
+                      <source media="(min-width: 1280px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                      <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="100%" alt="Мост дьявола">
+                    </picture>
                   </div>
                 </article>
               </li>
@@ -114,7 +162,11 @@
           </div>
           <div class="video__main">
             <div class="video__main__screen">
-              <img src="img/video-mobile@1x.jpg">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="100%" alt="Видео">
+              </picture>
             </div>
             <div class="video__main__controls">
               <div class="controls__slide"></div>
