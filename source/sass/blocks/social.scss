@@ -1,11 +1,32 @@
-.social__link--twitter {
-
+.social__list {
+    display: flex;
+    justify-content: space-between;
+    width: 151px;
 }
 
-.social__link--facebook {
-
+.social__list {
+    padding-left: 0;
 }
 
-.social__link--youtube {
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 48px;
+    background-color: $bg-blue;
+}
 
+.social__link:hover,
+.social__link:focus {
+    background-color: $bg-blue-hover;
+    
+}
+
+.social__link:active {
+    background-color: $bg-blue-focus;
+}
+
+.social__link svg:active {
+    opacity: 0.3;
 }

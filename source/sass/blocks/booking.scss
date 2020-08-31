@@ -5,35 +5,12 @@
     padding-bottom: 27px;
 }
 
-@media (min-width: $tablet-width) {
-    .booking__header {
-        padding-top: 58px;
-        padding-left: 22%;
-        padding-right: 22%;
-        padding-bottom: 37px;
-    }
-}
-
-@media (min-width: $desktop-width) {
-    .booking__header {
-        padding-left: 32%;
-        padding-right: 32%;
-        padding-bottom: 42px;
-    }
-}
-
 .booking__title {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-}
-
-@media (min-width: $tablet-width) {
-    .booking__title {
-        font-size: 30px;
-    }
 }
 
 .booking__intro {
@@ -48,13 +25,34 @@
     padding-top: 49px;
 }
 
+.button--booking {
+    margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
+    .booking__header {
+        padding-top: 58px;
+        padding-left: 22%;
+        padding-right: 22%;
+        padding-bottom: 37px;
+    }
+
+    .booking__title {
+        font-size: 30px;
+    }
+
     .map {
         padding-top: 58px;
     }
 }
 
 @media (min-width: $desktop-width) {
+    .booking__header {
+        padding-left: 32%;
+        padding-right: 32%;
+        padding-bottom: 42px;
+    }
+
     .map {
         padding-top: 66px;
     }
