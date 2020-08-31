@@ -32,6 +32,7 @@
 .features__list {
     padding-left: 0;
     margin: 0;
+    background-color: $grey;
 }
 
 .features__item {
@@ -47,6 +48,7 @@
 .features__item--type-2 {
     display: flex;
     flex-direction: column;
+    background-color: $white;
 }
 
 .features__item--house {
@@ -77,7 +79,7 @@
 }
 
 .features__item--type-3 {
-    background-color: $grey;
+    
 }
 
 .features__item--type-3 .features__feature-title {
@@ -124,6 +126,7 @@
         background-image: url(../../img/bg-triangle.svg);
         background-position: top;
         background-repeat: no-repeat;
+        background-size: 100%;
     }
 
     .features__item--type-2 {
@@ -132,6 +135,8 @@
     }
 
     .features__item--type-3 {
+        margin-left: 20px;
+        margin-right: 20px;
         border-bottom: 1px solid #D6D6D6;
     }
 
@@ -152,7 +157,7 @@
     .features__list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 256px 330px 256px 256px;
     }
 
     .features__list li:nth-child(3) {
