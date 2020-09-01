@@ -158,17 +158,19 @@
 
     .main-nav__item--active a {
         color: #766357;
-    }
 
-    &:hover,
-    &:focus {
-        color: #604E43;
-    }
+        &:hover,
+        &:focus {
 
-    &:active {
-        color: #766357;
-        opacity: 0.3;
-    }  
+            color: #604E43;
+        }
+
+        &:active {
+
+            color: #766357;
+            opacity: 0.3;
+        }  
+    }
 }
 
 @media (min-width: $desktop-width) {
