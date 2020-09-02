@@ -1,0 +1,27 @@
+.logo__frame {
+    display: none;
+}
+
+.logo__bridge {
+    display: none;
+}
+
+.logo__clouds {
+    display: none;
+}
+
+@media (min-width: $tablet-width) {
+    .logo__clouds {
+        display: block;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .logo__frame {
+        display: block;
+    }
+    
+    .logo__bridge {
+        display: block;
+    }
+}

@@ -5,7 +5,8 @@
 .page-header__logo {
     position: absolute;
     left: 50%;
-    margin-left: -51px;
+    margin-left: -93px;
+    top: 0;
 }
 
 .main-nav__toggle {
@@ -36,9 +37,7 @@
         height: 56px;
     }
 
-    .page-header__logo {
-        bottom: -32px;
-    }
+    
 
     .main-nav__toggle {
         display: block;
@@ -170,16 +169,5 @@
             color: #766357;
             opacity: 0.3;
         }  
-    }
-}
-
-@media (min-width: $desktop-width) {
-    .page-header__logo {
-        margin-left: -94px;
-    }
-
-    .page-header__img {
-        width: 187px;
-        height: 96px;
     }
 }
