@@ -1,3 +1,6 @@
+.gallery {
+}
+
 .gallery__header {
     text-transform: uppercase;
     padding-top: 32px;
@@ -20,12 +23,18 @@
     text-align: center;
 }
 
+.gallery__main {
+}
+
 .gallery__list {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.gallery__item {
 }
 
 @media (max-width: $mobile-width-only) {
@@ -76,12 +85,9 @@
     .gallery__list li:first-child {
         width: 100%;
     }
-
-    .gallery__list li:last-child {
-        width: 34%;
-    }
     
     .gallery__item {
         width: 33%;
+        flex-grow: 1;
     }
 }

@@ -20,3 +20,10 @@
         padding-right: 121px;
     }
 }
+
+.modal {
+    display: block;
+    position: fixed;
+    background-color: $white;
+    text-align: center;
+}

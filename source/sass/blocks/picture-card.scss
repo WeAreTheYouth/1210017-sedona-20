@@ -33,12 +33,12 @@
     font-weight: bold;
 }
 
-.likes-icon {
+.picture-likes-icon {
     fill: $black;
     opacity: 0.3;
 }
 
-.likes-number {
+.picture-likes-number {
     padding-left: 14px;
 }
 
@@ -64,7 +64,7 @@
         bottom: 11px;
     }
 
-    .likes-number {
+    .picture-likes-number {
         padding-left: 9px;
     }
 }
@@ -86,11 +86,11 @@
         color: $white;
     }
 
-    .likes-number {
+    .picture-likes-number {
         color: $white;
     }
 
-    .likes-icon {
+    .picture-likes-icon {
         fill: $white;
         opacity: 1;
     }

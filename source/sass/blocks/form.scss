@@ -1,0 +1,234 @@
+.form {
+}
+
+fieldset {
+    border: none;
+}
+
+.form__fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.form__fieldset--type-1 {
+}
+
+.form__item-title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.entry-field {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+}
+
+.entry-field-title {
+    color: $darkgray;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-right: 13px;
+}
+
+.entry-field-input {
+    flex-grow: 1;
+    width: 100%;
+    color: $black;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    box-sizing: border-box;
+    border: 4px solid $lightgray;
+    background-color: $lightgray;
+    outline: none;
+    height: 58px;
+    padding-left: 19px;
+}
+
+.entry-field--introduce {
+    align-items: center;
+}
+
+.form__fieldset--type-2 {
+}
+
+.entry-field--contacts {
+    flex-direction: column;
+}
+
+.entry-field-title--contacts {
+    padding-left: 4.29%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: $mobile-width-only) {
+    .form__fieldset {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    
+    .form__fieldset:last-of-type {
+        border-bottom: none;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .form {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 7.82%;
+        padding-right: 7.82%;
+    }
+
+    .form__item-title {
+        font-size: 21px;
+    }
+
+    .form__fieldset--type-3 {
+        order: -1;
+    }
+
+    .form__fieldset--type-2,
+    .form__fieldset--type-4,
+    .form__fieldset--type-5 {
+        width: 100%;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .form {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .form__fieldset {
+        padding-top: 0;
+        padding-bottom: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.entry-field-input:hover {
+    border: 4px solid #E5E5E5;
+    background-color: #E5E5E5;
+}
+
+.entry-field-input:active,
+.entry-field-input:focus {
+    border: 4px solid #E5E5E5;
+    background-color: $white;
+
+}
+
+
+.radio,
+.checkbox {
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+    .checkbox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 15.44%;
+        padding-right: 15.44%;
+    }
+
+    .checkbox__item {
+        width: 200px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .checkbox {
+        justify-content: space-between;
+        flex-wrap: no-wrap;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+
+
+.radio__item-label,
+.checkbox__item-label {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+
+.entry-field-input--textarea {
+    height: 160px;
+    resize: none;
+}
+
+
+
+
+.form__memo {
+    color: $darkgray;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+@media (max-width: $mobile-width-only) {
+    .form__memo {
+        display: none;
+    }
+
+    .button--form {
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,76 @@
+.player {
+}
+
+.player__screen {
+}
+
+.player__screen img {
+    display: block;
+}
+
+.player__operation {
+    position: relative;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.player__controls__slide {
+    position: absolute;
+    top: -45px;
+    width: 100%;
+    height: 45px;
+    background-color: $black;
+    opacity: 0.6;
+}
+
+.player__knobs {
+    display: flex;
+    background-color: $lightgray;
+}
+
+.player__controls {
+    padding-top: 23px;
+    padding-left: 25px;
+    padding-bottom: 18px;
+    padding-right: 25px;
+}
+
+.player__controls__repeat {
+    margin-right: auto;
+}
+
+.player__controls__cc {
+}
+
+.player__controls__fullscreen {
+}
+
+@media (min-width: $tablet-width) {
+    .player__operation {
+        margin: 0;
+    }
+
+    .player__controls {
+        position: absolute;
+        top: -80px;
+        background-color: transparent;
+    }
+
+    .player__controls__slide {
+        top: -93px;
+        width: 100%;
+        height: 93px;
+    }
+
+    .player__controls__repeat {
+        left: 10px;
+    }
+    
+    .player__controls__cc {
+        right: 50px;
+    }
+    
+    .player__controls__fullscreen {
+        right: 5px;
+    }
+}
