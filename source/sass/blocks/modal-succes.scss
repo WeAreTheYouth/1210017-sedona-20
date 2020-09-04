@@ -1,0 +1,32 @@
+.modal-succes {
+    width: 320px;
+    height: 280px;
+    top: 5%;
+    left: 50%;
+    margin-left: -160px;
+}
+
+.modal-succes div {
+    margin-top: 39px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $lightgray;
+}
+
+.button-succes {
+    margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+    .modal-succes {
+        width: 640px;
+        height: 347px;
+        margin-left: -320px;
+    }
+
+    .modal-succes div {
+        margin-top: 42px;
+        padding-top: 44px;
+        padding-bottom: 44px;
+    }
+}

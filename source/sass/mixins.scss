@@ -22,8 +22,40 @@
 }
 
 .modal {
-    display: block;
+    display: none;
     position: fixed;
     background-color: $white;
     text-align: center;
+}
+
+.modal__title {
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+
+.modal__description {
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-top: 11px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+@media (min-width: $tablet-width) {
+    .modal__title {
+        font-size: 30px;
+        line-height: 40px;
+        padding-top: 40px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+    .modal__description {
+        padding-top: 0;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
 }
