@@ -6,7 +6,6 @@
 
 .picture-card-description {
     padding-top: 11px;
-    padding-bottom: 15px;
 }
 
 .picture-card__title {
@@ -31,6 +30,7 @@
     font-size: 14px;
     line-height: 24px;
     font-weight: bold;
+    margin-top: 11px;
 }
 
 .picture-likes-icon {
@@ -46,12 +46,15 @@
     display: block;
 }
 
-@media (min-width: $tablet-width) {
+@media (max-width: $mobile-width-only) {
     .picture-card {
-        padding-left: 0;
-        padding-right: 0;
+        padding-top: 22px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
+}
 
+@media (min-width: $tablet-width) {
     .picture-card-description {
         padding-left: 20px;
         padding-right: 20px;

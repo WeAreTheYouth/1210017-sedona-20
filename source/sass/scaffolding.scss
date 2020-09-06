@@ -38,3 +38,65 @@ ol {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+.button {
+    display: block;
+    color: $white;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: $bg-blue;
+    padding-top: 14px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 18px;
+    outline: none;
+    border: 0;
+}
+
+@media (min-width: $tablet-width) {
+    .button {
+        padding-left: 121px;
+        padding-right: 121px;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    background-color: $white;
+    text-align: center;
+}
+
+.modal__title {
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+
+.modal__description {
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-top: 11px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+@media (min-width: $tablet-width) {
+    .modal__title {
+        font-size: 30px;
+        line-height: 40px;
+        padding-top: 40px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+    .modal__description {
+        padding-top: 0;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+}

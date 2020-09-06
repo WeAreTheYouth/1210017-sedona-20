@@ -177,8 +177,8 @@
             <p class="video__title">Все еще сомневаетесь</p>
             <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
-          <div class="player">
-            <div class="player__screen">
+          <div class="videoplayer">
+            <div class="videoplayer__screen">
               <picture>
                 <source type="image/webp" media="(min-width: 1280px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
@@ -189,20 +189,23 @@
                 <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="100%" alt="Видео">
               </picture>
             </div>
-            <div class="player__operation">
-              <div class="player__controls__slide"></div>
-              <div class="player__knobs">
-                <div class="player__controls player__controls__repeat">
+            <div class="videoplayer__operation">
+              <div class="videoplayer__controls__slide">
+                <div class="videoplayer__range"></div>
+                <div class="videoplayer__pointer"></div>
+              </div>
+              <div class="videoplayer__knobs">
+                <div class="videoplayer__controls player__controls__repeat">
                   <svg width="16px" height="20px">
                     <use xlink:href="img/sprite.svg#icon-repeat"></use>
                   </svg>
                 </div>
-                <div class="player__controls player__controls__cc">
+                <div class="videoplayer__controls videoplayer__controls__cc">
                   <svg width="32px" height="20px">
                     <use xlink:href="img/sprite.svg#icon-cc"></use>
                   </svg>
                 </div>
-                <div class="player__controls player__controls__fullscreen">
+                <div class="videoplayer__controls videoplayer__controls__fullscreen">
                   <svg width="20px" height="20px">
                     <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
                   </svg>
