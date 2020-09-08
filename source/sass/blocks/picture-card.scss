@@ -6,7 +6,6 @@
 
 .picture-card-description {
     padding-top: 11px;
-    padding-bottom: 15px;
 }
 
 .picture-card__title {
@@ -25,42 +24,51 @@
 }
 
 .picture-likes {
-    background-color: transparent;
-    outline: none;
-    border: none;
+    display: flex;
+    align-items: center;
+    width: 80px;
     font-size: 14px;
     line-height: 24px;
     font-weight: bold;
+    margin-top: 11px;
 }
 
-.picture-likes::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 21px;
-    width: 23px;
-    height: 21px;
-    background-image: url(../../img/icon-like.svg);
+.picture-likes-icon {
+    fill: $black;
+    opacity: 0.3;
 }
 
-.likes-number {
-    padding-left: 20px;
+.picture-likes-number {
+    padding-left: 14px;
 }
 
 .picture-card-image img {
     display: block;
 }
 
-@media (min-width: $tablet-width) {
+@media (max-width: $mobile-width-only) {
     .picture-card {
-        padding-left: 0;
-        padding-right: 0;
+        padding-top: 22px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
+}
 
+@media (min-width: $tablet-width) {
     .picture-card-description {
         padding-left: 20px;
         padding-right: 20px;
         background-color: #f2f2f2;
+    }
+
+    .picture-likes {
+        position: absolute;
+        right: 5px;
+        bottom: 11px;
+    }
+
+    .picture-likes-number {
+        padding-left: 9px;
     }
 }
 
@@ -81,7 +89,12 @@
         color: $white;
     }
 
-    .picture-likes {
+    .picture-likes-number {
         color: $white;
+    }
+
+    .picture-likes-icon {
+        fill: $white;
+        opacity: 1;
     }
 }

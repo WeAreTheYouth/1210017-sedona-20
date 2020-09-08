@@ -1,22 +1,7 @@
-.button {
+@mixin spoil {
     display: block;
-    color: $white;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: $bg-blue;
-    padding-top: 14px;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 18px;
-    outline: none;
-    border: 0;
-}
-
-@media (min-width: $tablet-width) {
-    .button {
-        padding-left: 121px;
-        padding-right: 121px;
-    }
+    width: 1000px;
+    height: 1000px;
+    font-size: 0;
+    background-color: red;
 }

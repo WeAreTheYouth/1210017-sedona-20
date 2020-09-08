@@ -1,3 +1,6 @@
+.booking {
+}
+
 .booking__header {
     padding-top: 30px;
     padding-left: 9%;
@@ -20,9 +23,17 @@
     color: $darkgray;
 }
 
-.map {
+.booking__map {
     height: 350px;
-    padding-top: 49px;
+    margin-top: 49px;
+    background-image: url(../../img/icon-map-marker.svg), url(../../img/bg-map-mobile@1x.jpg);
+    background-size: 27px 27px, cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+        background-image: url(../../img/icon-map-marker.svg), url(../../img/bg-map-mobile@2x.jpg);
+    }
 }
 
 .button--booking {
@@ -41,8 +52,13 @@
         font-size: 30px;
     }
 
-    .map {
-        padding-top: 58px;
+    .booking__map {
+        margin-top: 58px;
+        background-image: url(../../img/icon-map-marker.svg), url(../../img/bg-map-tablet@1x.jpg);
+
+        @media (min-resolution: 2dppx) {
+            background-image: url(../../img/icon-map-marker.svg), url(../../img/bg-map-tablet@2x.jpg);
+        }
     }
 }
 
@@ -53,7 +69,12 @@
         padding-bottom: 42px;
     }
 
-    .map {
-        padding-top: 66px;
+    .booking__map {
+        margin-top: 66px;
+        background-image: url(../../img/icon-map-marker.svg), url(../../img/bg-map-desktop@1x.jpg);
+
+        @media (min-resolution: 2dppx) {
+            background-image: url(../../img/icon-map-marker.svg), url(../../img/bg-map-desktop@2x.jpg);
+        }
     }
 }
