@@ -14,7 +14,7 @@
     line-height: 26px;
     font-weight: bold;
     text-transform: uppercase;
-    padding-bottom: 40px;
+    padding-bottom: 31px;
     margin: 0;
 }
 
@@ -47,10 +47,14 @@
 }
 
 .features__item-specification {
-    padding-top: 55px;
+    padding-top: 39px;
     padding-left: 4%;
     padding-right: 4%;
     padding-bottom: 39px;
+}
+
+.features__item:first-child .features__item-specification {
+    padding-top: 72px;
 }
 
 .features__feature-title {
@@ -63,6 +67,9 @@
 .features__number {
     font-size: 14px;
     line-height: 21px;
+    margin: 0;
+    padding-top: 11px;
+    padding-bottom: 17px;
 }
 
 .features__description {
