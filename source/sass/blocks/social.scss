@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     width: 151px;
+    margin: 0;
     padding-left: 0;
 }
 
@@ -32,4 +33,11 @@
 
 .social__link svg:active {
     opacity: 0.3;
+}
+
+@media (max-width: $mobile-width-only) {
+    .social__list {
+        padding-top: 12px;
+        padding-bottom: 5px;
+    }
 }
