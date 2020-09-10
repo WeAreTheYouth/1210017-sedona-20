@@ -43,6 +43,12 @@
     margin: 0 auto;
 }
 
+@media (max-width: $mobile-width-only) {
+    .booking__intro br {
+        display: none;
+    }
+}
+
 @media (min-width: $tablet-width) {
     .booking__header {
         padding-top: 26px;
