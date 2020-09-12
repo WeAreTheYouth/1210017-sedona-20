@@ -16,7 +16,7 @@
       <header class="page-header">
         <nav class="main-nav">
           <div class="main-nav__row">
-            <a class="page-header__logo">
+            <a href="index.html" class="page-header__logo">
               <svg class="logo" width="186.643px" height="96.425px" role="img" aria-label="логотип Седона">
                 <use class="logo__frame" xlink:href="img/sprite.svg#logo-frame"></use>
                 <use class="logo__sedona" xlink:href="img/sprite.svg#logo-sedona"></use>
@@ -263,6 +263,29 @@
     </div>
 
     <script src="js/menu.js"></script>
+
+    <!-- <script>
+      window.addEventListener('load', function() {
+
+        const galleryListNode = document.querySelector('.gallery__list');
+
+        galleryListNode.addEventListener('click', function(event) {
+          let target = event.target.parentElement;
+          let targetLikeField = target.querySelector('span');
+          let targetLikeIcon = event.target;
+
+          if (event.target.classList.contains('picture-likes-icon')) {
+            if (!target.classList.contains('picture-likes-icon--liked')) {
+              target.innerText = parseInt(target.innerText) + 1;
+              target.classList.add('picture-likes-icon--liked');
+            } else {
+              target.innerText = parseInt(target.innerText) - 1;
+              target.classList.remove('picture-likes-icon--liked');
+            }
+          }
+        })
+      })
+    </script> -->
 
   </body>
 </html>

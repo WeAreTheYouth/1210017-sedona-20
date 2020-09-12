@@ -16,7 +16,7 @@
       <header class="page-header">
         <nav class="main-nav">
           <div class="main-nav__row">
-            <a class="page-header__logo">
+            <a href="index.html" class="page-header__logo">
               <svg class="logo" width="186.643px" height="96.425px" role="img" aria-label="логотип Седона">
                 <use class="logo__frame" xlink:href="img/sprite.svg#logo-frame"></use>
                 <use class="logo__sedona" xlink:href="img/sprite.svg#logo-sedona"></use>
@@ -216,6 +216,14 @@
     </section>
 
     <script src="js/menu.js"></script>
+
+    <!-- <script>
+      const toggle = document.querySelector('[aria-pressed]');  
+        toggle.addEventListener('click', (e) => {
+        let pressed = e.target.getAttribute('aria-pressed') === 'true';
+        e.target.setAttribute('aria-pressed', String(!pressed));
+      });
+    </script> -->
 
   </body>
 </html>

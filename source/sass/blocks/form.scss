@@ -1,15 +1,13 @@
 .form {
-}
-
-fieldset {
-    border: none;
+    padding-bottom: 38px;
 }
 
 input::placeholder {
-    color: red;
+    color: $black;
 }
 
 .form__fieldset {
+    border: none;
     padding: 0;
     margin: 0;
     padding-bottom: 24px;
@@ -83,6 +81,7 @@ input::placeholder {
 /* form__fieldset--type-2 */
 
 .form__fieldset--type-2 {
+    padding-bottom: 28px;
 }
 
 .form__fieldset--type-2 .form__field {
@@ -93,7 +92,7 @@ input::placeholder {
 
 .form__fieldset--type-2 label {
     padding-top: 14px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     padding-left: 7.78%;
 }
 
@@ -115,6 +114,10 @@ input::placeholder {
 }
 
 .form__fieldset--type-4 {
+}
+
+.form__fieldset--type-3 .form__field {
+    padding-top: 13px;
 }
 
 .form__fieldset--type-3 .form__field,
@@ -142,9 +145,21 @@ input[type=checkbox] {
     display: inline-block;
     width: 56px;
     height: 56px;
-    background-color: #f2f2f2;
+    background-color: $lightgrey;
     border-radius: 50%;
     margin-right: 22px;
+
+    &:hover {
+        background-color: $softgrey;
+    }
+
+    &:focus {
+        background-color: $softgrey;
+    }
+
+    &:active {
+        background-color: $onemoregrey;
+    }
 }
 
 input[type=radio]:checked + label:before {
@@ -152,7 +167,7 @@ input[type=radio]:checked + label:before {
     width: 20px;
     height: 20px;
     background-color: $black;
-    border: 18px solid #f2f2f2;
+    border: 18px solid $lightgrey;
 }
 
 .form__fieldset--type-4 label:before {
@@ -160,7 +175,7 @@ input[type=radio]:checked + label:before {
     display: inline-block;
     width: 56px;
     height: 56px;
-    background-color: #f2f2f2;
+    background-color: $lightgrey;
     border-radius: 5px;
     margin-right: 22px;
 } 
@@ -170,6 +185,7 @@ input[type=checkbox]:checked + label:before {
     background-image: url(../../img/icon-tick.svg);
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 4px;
 }
 
 /* form__fieldset--type-5 */
@@ -178,7 +194,7 @@ input[type=checkbox]:checked + label:before {
     font-weight: bold;
     line-height: 26px;
     width: 100%;
-    height: 160px;
+    height: 145px;
     resize: none;
     border: none;
     padding-top: 13px;
@@ -198,8 +214,10 @@ input[type=checkbox]:checked + label:before {
 
 @media (max-width: $mobile-width-only) {
     .form__fieldset {
-        border-bottom: 1px solid #e5e5e5;
+        border-bottom: 1px solid $softgrey;
     }
+
+    
     
     .form__fieldset:last-of-type {
         border-bottom: none;
@@ -210,7 +228,11 @@ input[type=checkbox]:checked + label:before {
     }
 
     .button--form {
-        margin: 0 auto;
+        padding-top: 18px;
+        padding-bottom: 14px;
+        padding-right: 50px;
+        margin-left: 6%;
+        margin-right: 6%;
     }
 }
 
@@ -303,13 +325,43 @@ input[type=checkbox]:checked + label:before {
         bottom: 9px;
     }
 
-
     .form__checkbox {
         justify-content: space-between;
         flex-wrap: no-wrap;
         padding-left: 0;
         padding-right: 0;
     }
+}
+
+// Pixel Perfect
+
+@media (max-width: $mobile-width-only) {
+    .form__fieldset--type-2 label[for=email] {
+        padding-top: 11px;
+        padding-bottom: 7px;
+    }
+
+    .form__fieldset--type-3 .form__field:first-of-type {
+        padding-top: 22px;
+    }
+
+    .form__fieldset--type-3 {
+        padding-bottom: 26px;
+    }
+
+    .form__fieldset--type-4 legend {
+        padding-top: 15px;
+    }
+
+    .form__fieldset--type-4 {
+        padding-bottom: 25px;
+    }
+
+    .form__fieldset--type-5 .form__field {
+        padding-top: 15px;
+        padding-bottom: 27px;
+    }
 
     
+
 }
