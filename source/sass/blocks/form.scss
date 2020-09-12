@@ -36,7 +36,7 @@ input::placeholder {
 }
 
 .form__field label {
-    color: $darkgray;
+    color: $darkgrey;
     font-size: 14px;
     line-height: 24px;
     text-transform: uppercase;
@@ -52,8 +52,8 @@ input::placeholder {
     font-size: 18px;
     line-height: 26px;
     box-sizing: border-box;
-    border: 4px solid $lightgray;
-    background-color: $lightgray;
+    border: 4px solid $lightgrey;
+    background-color: $lightgrey;
     outline: none;
     height: 58px;
     padding-left: 19px;
@@ -183,14 +183,14 @@ input[type=checkbox]:checked + label:before {
     border: none;
     padding-top: 13px;
     padding-left: 20px;
-    background-color: $lightgray;
+    background-color: $lightgrey;
     outline: none;
 }
 
 /* memo */
 
 .form__memo {
-    color: $darkgray;
+    color: $darkgrey;
     font-size: 14px;
     line-height: 24px;
     text-transform: uppercase;

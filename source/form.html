@@ -47,9 +47,10 @@
       </header>
 
       <main>
-        <div class="intro  intro--page-inner">
+        <div class="intro intro--page-inner">
           <img class="intro_img " src="img/text-sedona.svg" width="282" height="49">
         </div>
+
         <section class="review">
           <h2 class="visually-hidden">Оставить свой отзыв</h2>
           <div class="review__header">
@@ -214,23 +215,7 @@
       </div>
     </section>
 
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-      var navList = document.querySelector('.main-nav__list');
-
-      navMain.classList.remove('main-nav--nojs');
-      
-      navToggle.addEventListener('click', function() {
-        if (navList.classList.contains('main-nav__list--shown')) {
-          navList.classList.remove('main-nav__list--shown');
-          navMain.classList.remove('main-nav--closed');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navList.classList.add('main-nav__list--shown');
-        }
-      });
-    </script>
+    <script src="js/menu.js"></script>
 
   </body>
 </html>

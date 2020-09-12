@@ -47,10 +47,10 @@
         </nav>
       </header>
 
-      <main class="page-index">
+      <main>
         <h1 class="visually-hidden">Sedona — онлайн-сервис для бронирования отелей в Седоне</h1>
         <div class="intro">
-          <img class="intro_img" src="img/text-sedona-index.svg">
+          <img class="intro_img" src="img/text-sedona-index.svg" alt="Sedona">
         </div>
 
         <section class="features">
@@ -89,7 +89,7 @@
               </li>
               <li class="features__item features__item--type-2 features__item--gift">
                 <h3 class="features__feature-title">Сувениры</h3>
-                <p class="features__description">Не только китайского, но и местного производства!</p>
+                <p class="features__description">Не только китайского,<br> но и местного производства!</p>
               </li>
               <li class="features__item features__item--type-2 features__item--burger">
                 <h3 class="features__feature-title">Еда</h3>
@@ -190,23 +190,7 @@
       </footer>
     </div>
 
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-      var navList = document.querySelector('.main-nav__list');
-
-      navMain.classList.remove('main-nav--nojs');
-      
-      navToggle.addEventListener('click', function() {
-        if (navList.classList.contains('main-nav__list--shown')) {
-          navList.classList.remove('main-nav__list--shown');
-          navMain.classList.remove('main-nav--closed');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navList.classList.add('main-nav__list--shown');
-        }
-      });
-    </script>
+    <script src="js/menu.js"></script>
 
   </body>
 </html>

@@ -10,8 +10,8 @@
 
 .videoplayer__operation {
     position: relative;
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 6.2%;
+    margin-right: 6.2%;
 }
 
 .videoplayer__controls__slide {
@@ -32,34 +32,54 @@
 
 .videoplayer__pointer {
     position: absolute;
-    width: 12px;
-    height: 12px;
+    width: 9px;
+    height: 9px;
     background-color: $white;
-    top: 17px;
-    left: 21.5%;
+    top: 19px;
+    left: 20.9%;
     border-radius: 6px;
 }
 
 .videoplayer__knobs {
     display: flex;
-    background-color: $lightgray;
+    background-color: $lightgrey;
+}
+
+.videoplayer__controls {
+    border: none;
+    outline: none;
+}
+
+.videoplayer__controls-icon {
+    fill: $dimgrey;
 }
 
 .videoplayer__controls__repeat {
+    padding-top: 22px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    padding-right: 23px;
     margin-right: auto;
 }
 
 .videoplayer__controls__cc {
+    padding-top: 22px;
+    padding-left: 20px;
+    padding-bottom: 18px;
+    padding-right: 11px;
 }
 
 .videoplayer__controls__fullscreen {
+    padding-top: 21px;
+    padding-left: 20px;
+    padding-bottom: 17px;
+    padding-right: 23px;
 }
 
-.videoplayer__controls {
-    padding-top: 23px;
-    padding-left: 25px;
-    padding-bottom: 18px;
-    padding-right: 25px;
+@media (max-width: $mobile-width-only) {
+    .videoplayer__controls svg {
+        fill: $dimgrey;
+    }
 }
 
 @media (min-width: $tablet-width) {
@@ -71,6 +91,11 @@
         position: absolute;
         top: -80px;
         background-color: transparent;
+        fill: $white;
+    }
+
+    .videoplayer__controls svg {
+        fill: $white;
     }
 
     .videoplayer__controls__slide {
@@ -86,8 +111,8 @@
     }
 
     .videoplayer__pointer {
-        top: 40px;
-        left: 21.5%;
+        top: 43px;
+        left: 32%;
     }
 
     .videoplayer__controls__repeat {
@@ -95,10 +120,32 @@
     }
     
     .videoplayer__controls__cc {
-        right: 50px;
+        right: 81px;
+        bottom: 11px;
     }
     
     .videoplayer__controls__fullscreen {
-        right: 5px;
+        right: 18px;
+        bottom: 9px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .videoplayer__pointer {
+        top: 42px;
+        left: 25.6%;
+    }
+
+
+
+
+    .videoplayer__controls__cc {
+        right: 83px;
+        bottom: 13px;
+    }
+
+    .videoplayer__controls__fullscreen {
+        right: 20px;
+        bottom: 14px;
     }
 }

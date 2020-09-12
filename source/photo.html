@@ -32,7 +32,7 @@
             <li class="main-nav__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--active">
               <a>Фото и видео</a>
             </li>
             <li></li>
@@ -47,11 +47,11 @@
       </header>
 
       <main>
-        <div class="intro  intro--page-inner">
+        <div class="intro intro--page-inner">
           <img class="intro_img" src="img/text-sedona.svg" width="282" height="49">
         </div>
-        
 
+        
         <section class="gallery">
           <h2 class="visually-hidden">Фотогалерея в Седоне</h2>
           <div class="gallery__header">
@@ -74,7 +74,7 @@
                       <span class="picture-likes-number">1350</span>
                     </p>
                   </div>
-                  <div class="picture-card-image">
+                  <a class="picture-card-image">
                     <picture>
                       <source type="image/webp" media="(min-width: 1280px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
@@ -84,7 +84,7 @@
                       <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
                       <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="100%" alt="Неродные просторы">
                     </picture>
-                  </div>
+                  </a>
                 </article>
               </li>
               <li class="gallery__item">
@@ -101,7 +101,7 @@
                       <span class="picture-likes-number">143</span>
                     </p>
                   </div>
-                  <div class="picture-card-image">
+                  <a class="picture-card-image">
                     <picture>
                       <source type="image/webp" media="(min-width: 1280px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
@@ -111,7 +111,7 @@
                       <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
                       <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="100%" alt="Местная растительность">
                     </picture>
-                  </div>
+                  </a>
                 </article>
               </li>
               <li class="gallery__item">
@@ -128,7 +128,7 @@
                       <span class="picture-likes-number">96</span>
                     </p>
                   </div>
-                  <div class="picture-card-image">
+                  <a class="picture-card-image">
                     <picture>
                       <source type="image/webp" media="(min-width: 1280px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
@@ -138,7 +138,7 @@
                       <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
                       <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="100%" alt="Дорога на север">
                     </picture>
-                  </div>
+                  </a>
                 </article>
               </li>
               <li class="gallery__item">
@@ -155,7 +155,7 @@
                       <span class="picture-likes-number">254</span>
                     </p>
                   </div>
-                  <div class="picture-card-image">
+                  <a class="picture-card-image">
                     <picture>
                       <source type="image/webp" media="(min-width: 1280px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
@@ -165,7 +165,7 @@
                       <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
                       <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="100%" alt="Мост дьявола">
                     </picture>
-                  </div>
+                  </a>
                 </article>
               </li>
             </ul>
@@ -175,7 +175,7 @@
         <section class="video">
           <h2 class="visually-hidden">Видеопрезентация Седоны</h2>
           <div class="video__header">
-            <p class="video__title">Все еще сомневаетесь</p>
+            <p class="video__title">Все еще сомневаетесь?</p>
             <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <div class="videoplayer">
@@ -196,21 +196,21 @@
                 <div class="videoplayer__pointer"></div>
               </div>
               <div class="videoplayer__knobs">
-                <div class="videoplayer__controls player__controls__repeat">
+                <button class="videoplayer__controls videoplayer__controls__repeat">
                   <svg width="16px" height="20px">
-                    <use xlink:href="img/sprite.svg#icon-repeat"></use>
+                    <use class="videoplayer__controls-icon" xlink:href="img/sprite.svg#icon-repeat"></use>
                   </svg>
-                </div>
-                <div class="videoplayer__controls videoplayer__controls__cc">
+                </button>
+                <button class="videoplayer__controls videoplayer__controls__cc">
                   <svg width="32px" height="20px">
-                    <use xlink:href="img/sprite.svg#icon-cc"></use>
+                    <use class="videoplayer__controls-icon" xlink:href="img/sprite.svg#icon-cc"></use>
                   </svg>
-                </div>
-                <div class="videoplayer__controls videoplayer__controls__fullscreen">
+                </button>
+                <button class="videoplayer__controls videoplayer__controls__fullscreen">
                   <svg width="20px" height="20px">
-                    <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
+                    <use class="videoplayer__controls-icon" xlink:href="img/sprite.svg#icon-fullscreen"></use>
                   </svg>
-                </div>
+                </button>
               </div>  
             </div>
           </div>
@@ -262,23 +262,7 @@
       </footer>
     </div>
 
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-      var navList = document.querySelector('.main-nav__list');
-
-      navMain.classList.remove('main-nav--nojs');
-      
-      navToggle.addEventListener('click', function() {
-        if (navList.classList.contains('main-nav__list--shown')) {
-          navList.classList.remove('main-nav__list--shown');
-          navMain.classList.remove('main-nav--closed');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navList.classList.add('main-nav__list--shown');
-        }
-      });
-    </script>
+    <script src="js/menu.js"></script>
 
   </body>
 </html>
