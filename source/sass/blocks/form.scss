@@ -43,7 +43,7 @@ input::placeholder {
 }
 
 .form__field input {
-    flex-grow: 1;
+    display: flex;
     width: 100%;
     color: inherit;
     font-weight: bold;
@@ -238,12 +238,14 @@ input[type=checkbox]:checked + label:before {
 
 @media (min-width: $tablet-width) {
     .form {
+        position: relative;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
         padding-left: 7.82%;
         padding-right: 7.82%;
+        padding-bottom: 62px;
     }
 
     .form__fieldset--type-2,
@@ -255,6 +257,22 @@ input[type=checkbox]:checked + label:before {
     .form__fieldset--type-1 legend,
     .form__fieldset--type-3 legend {
         text-align: left;
+    }
+
+    .form__fieldset--type-1 {
+        width: 41%;
+        padding-bottom: 52px;
+    }
+
+    .form__fieldset--type-2 legend {
+        padding-top: 20px;
+        padding-right: 62px;
+        padding-bottom: 13px;
+        padding-left: 62px;
+    }
+
+    .form__fieldset--type-2 {
+        padding-bottom: 37px;
     }
 
     .form__field {
@@ -278,6 +296,16 @@ input[type=checkbox]:checked + label:before {
         order: -1;
     }
 
+    .form__fieldset--type-3::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 292px;
+        top: 27px;
+        right: 50%;
+        background-color: #DBDBDB;
+    }
+
     .form__fieldset--type-2,
     .form__fieldset--type-4,
     .form__fieldset--type-5 {
@@ -293,12 +321,28 @@ input[type=checkbox]:checked + label:before {
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
-        padding-left: 15.44%;
-        padding-right: 15.44%;
+        padding-left: 14.2%;
+        padding-right: 14.2%;
     }
 
     .form__checkbox .form__field {
         width: 200px;
+        padding-top: 28px;
+    }
+
+    .form__field textarea {
+        padding-top: 18px;
+    }
+
+    .button--form {
+        padding-top: 18px;
+        padding-left: 65px;
+        padding-bottom: 14px;
+        padding-right: 76px;
+    }
+
+    .form__memo {
+        padding-top: 20px;
     }
 }
 
@@ -361,7 +405,69 @@ input[type=checkbox]:checked + label:before {
         padding-top: 15px;
         padding-bottom: 27px;
     }
+}
 
-    
+@media (min-width: $tablet-width) {
+    .form__fieldset--type-3 {
+        padding-right: 30px;
+    }
 
+    .form__fieldset--type-3 .form__fieldset-title {
+        padding-top: 25px;
+        padding-right: 20px;
+        padding-bottom: 35px;
+        padding-left: 0px;
+    }
+
+    .form__fieldset--type-3 .form__field {
+        padding-top: 22px;
+    }
+
+    .form__fieldset--type-3 label:before {
+        margin-right: 19px;
+    }
+
+    .form__fieldset--type-1 .form__fieldset-title {
+        padding-top: 25px;
+        padding-right: 20px;
+        padding-bottom: 35px;
+        padding-left: 0px;
+    }
+
+    .form__fieldset--type-2 label {
+        padding-top: 4px;
+        padding-left: 22px;
+        padding-bottom: 10px;
+    }
+
+    .form__fieldset--type-2 label[for=email] {
+        padding-bottom: 6px;
+    }
+
+    .form__fieldset--type-2 .form__field:last-of-type {
+        padding-top: 22px;
+    }
+
+    .form__fieldset--type-4 legend {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 19%;
+        margin-right: 19%;
+    }
+
+    .form__fieldset--type-4 {
+        padding-bottom: 47px;
+    }
+
+    .form__fieldset--type-5 legend {
+        padding-top: 20px;
+        padding-bottom: 13px;
+        padding-left: 11.5%;
+        padding-right: 11.5%;
+    }
+
+    .form__fieldset--type-5 .form__field {
+        padding-top: 41px;
+        padding-bottom: 34px;
+    }
 }
