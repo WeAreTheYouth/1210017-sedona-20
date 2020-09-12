@@ -4,7 +4,7 @@
     flex-direction: column-reverse;
 }
 
-.picture-card-description {
+.picture-card__description {
     padding-top: 11px;
 }
 
@@ -23,7 +23,7 @@
     margin: 0;
 }
 
-.picture-likes {
+.picture-card__likes {
     display: flex;
     align-items: center;
     width: 80px;
@@ -33,16 +33,16 @@
     margin-top: 11px;
 }
 
-.picture-likes-icon {
+.picture-card__likes-icon {
     fill: $black;
     opacity: 0.3;
 }
 
-.picture-likes-number {
+.picture-card__likes-number {
     padding-left: 14px;
 }
 
-.picture-card-image img {
+.picture-card__image img {
     display: block;
 }
 
@@ -55,7 +55,7 @@
 }
 
 @media (min-width: $tablet-width) {
-    .picture-card-description {
+    .picture-card__description {
         padding-top: 15px;
         padding-left: 20px;
         padding-bottom: 16px;
@@ -63,19 +63,19 @@
         background-color: $lightgrey;
     }
 
-    .picture-likes {
+    .picture-card__likes {
         position: absolute;
         right: 4px;
         bottom: 11px;
     }
 
-    .picture-likes-number {
+    .picture-card__likes-number {
         padding-left: 9px;
     }
 }
 
 @media (min-width: $desktop-width) {
-    .picture-card-description {
+    .picture-card__description {
         box-sizing: border-box;
         width: 100%;
         position: absolute;
@@ -91,16 +91,15 @@
         color: $white;
     }
 
-    .picture-likes-number {
+    .picture-card__likes-number {
         color: $white;
     }
 
-    .picture-likes-icon {
+    .picture-card__likes-icon {
         fill: $white;
         opacity: 1;
     }
 }
-
 
 // Pixel Perfect
 

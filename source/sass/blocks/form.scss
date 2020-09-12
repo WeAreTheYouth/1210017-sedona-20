@@ -2,7 +2,11 @@
     padding-bottom: 38px;
 }
 
-input::placeholder {
+.form input::placeholder {
+    color: $black;
+}
+
+.form textarea::placeholder {
     color: $black;
 }
 
@@ -31,6 +35,11 @@ input::placeholder {
     padding-top: 20px;
     padding-left: 6.25%;
     padding-right: 6.25%;
+}
+
+.form__field-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .form__field label {
@@ -135,8 +144,8 @@ input::placeholder {
     text-transform: none;
 }
 
-input[type=radio],
-input[type=checkbox] {
+.form input[type=radio],
+.form input[type=checkbox] {
     display: none;
 }
 
@@ -227,7 +236,7 @@ input[type=checkbox]:checked + label:before {
         display: none;
     }
 
-    .button--form {
+    .form--button {
         padding-top: 18px;
         padding-bottom: 14px;
         padding-right: 50px;
@@ -332,9 +341,10 @@ input[type=checkbox]:checked + label:before {
 
     .form__field textarea {
         padding-top: 18px;
+        height: 142px;
     }
 
-    .button--form {
+    .form--button {
         padding-top: 18px;
         padding-left: 65px;
         padding-bottom: 14px;
@@ -350,6 +360,7 @@ input[type=checkbox]:checked + label:before {
     .form {
         padding-left: 10%;
         padding-right: 10%;
+        padding-bottom: 67px;
     }
 
     .form__field span {
@@ -470,4 +481,74 @@ input[type=checkbox]:checked + label:before {
         padding-top: 41px;
         padding-bottom: 34px;
     }
+}
+
+@media (min-width: $desktop-width) {
+    .review__header {
+        padding-bottom: 34px;
+    }
+
+    .form__fieldset--type-3 .form__fieldset-title {
+        padding-left: 76px;
+    }
+
+    .form__fieldset--type-3 {
+        padding-left: 4px;
+    }
+
+    .form__fieldset--type-1 {
+        width: 41.7%;
+    }
+
+    .form__fieldset--type-2 legend {
+        padding-top: 18px;
+        padding-bottom: 11px;
+    }
+
+    .form__field-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 28px;
+    }
+
+    .form__fieldset--type-4 legend {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 29%;
+        margin-right: 29%;
+    }
+
+    .form__checkbox .form__field {
+        width: 240px;
+        padding-top: 23px;
+    }
+
+    .form__fieldset--type-5 legend {
+        padding-top: 18px;
+        padding-bottom: 11px;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .form__fieldset--type-5 .form__field {
+        padding-top: 43px;
+        padding-bottom: 34px;
+    }
+
+    .form__field textarea {
+        padding-top: 18px;
+        height: 142px;
+        padding-bottom: 0;
+    }
+
+    .form--button {
+        padding-top: 18px;
+        padding-left: 149px;
+        padding-bottom: 14px;
+        padding-right: 148px;
+    }
+    
+
 }
