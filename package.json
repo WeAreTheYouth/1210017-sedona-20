@@ -43,6 +43,7 @@
     "node": "12.18.2"
   },
   "dependencies": {
-    "del": "^5.1.0"
+    "del": "^5.1.0",
+    "imagemin-mozjpeg": "^9.0.0"
   }
 }
