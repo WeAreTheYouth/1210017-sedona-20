@@ -31,3 +31,33 @@
         padding-bottom: 26px;
     }
 }
+
+// Pixel Perfect
+
+@media (max-width: $mobile-width-only) {
+    .page-footer__hash {
+        padding-right: 2px;
+    }
+
+    .page-footer__social {
+        padding-right: 2px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .page-footer {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .page-footer__social {
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .page-footer__social {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}

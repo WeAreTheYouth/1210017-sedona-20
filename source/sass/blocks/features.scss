@@ -1,5 +1,6 @@
 .features {
     text-align: center;
+    text-transform: uppercase;
 }
 
 .features__header {
@@ -13,7 +14,6 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: bold;
-    text-transform: uppercase;
     padding-bottom: 31px;
     margin: 0;
 }
@@ -21,8 +21,7 @@
 .features__intro {
     font-size: 14px;
     line-height: 26px;
-    text-transform: uppercase;
-    color: $darkgray;
+    color: $darkgrey;
     margin: 0;
 }
 
@@ -36,7 +35,6 @@
 }
 
 .features__item {
-    text-transform: uppercase;
     background-repeat: no-repeat;
 }
 
@@ -63,9 +61,9 @@
 .features__number {
     font-size: 14px;
     line-height: 21px;
-    margin: 0;
     padding-top: 11px;
     padding-bottom: 17px;
+    margin: 0;
 }
 
 .features__description {
@@ -82,7 +80,6 @@
     display: flex;
     flex-direction: column;
     background-color: $white;
-    padding-right: 13%;
 }
 
 .features__item--house {
@@ -103,25 +100,9 @@
     background-size: 40px 35px;
 }
 
-.features__item--type-2 .features__feature-title {
-    padding-top: 26px;
-}
-
-.features__item--type-2 .features__description {
-    padding-top: 16px;
-}
-
 .features__item--type-3 {
     padding-left: 5%;
     padding-right: 5%;
-}
-
-.features__item--type-3 .features__feature-title {
-    padding-top: 26px;
-}
-
-.features__item--type-3 .features__description {
-    padding-bottom: 24px;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -136,31 +117,32 @@
         border: none;
     }
 
-    .features__item:first-child .features__item-specification {
-        padding-top: 72px;
-    }
-
     .features__item--type-2 {
         padding-left: 69px;
+        padding-right: 13%;
         text-align: left;
     }
 
-    .features__item--house .features__feature-title {
-        padding-top: 35px;
+    .features__item--type-2 .features__feature-title {
+        padding-top: 26px;
     }
-
-    .features__item--burger .features__description {
-        padding-bottom: 35px;
-    }
-
-    .features__item:nth-child(5) .features__item-specification {
-        padding-bottom: 35px;
+    
+    .features__item--type-2 .features__description {
+        padding-top: 16px;
     }
 
     .features__item--type-3 {
         margin-left: 20px;
         margin-right: 20px;
-        border-bottom: 1px solid #D6D6D6;
+        border-bottom: 1px solid $othergrey;
+    }
+
+    .features__item--type-3 .features__feature-title {
+        padding-top: 26px;
+    }
+    
+    .features__item--type-3 .features__description {
+        padding-bottom: 24px;
     }
 }
 
@@ -174,11 +156,7 @@
 
     .features__title {
         font-size: 21px;
-    }
-
-    .features__number {
-        padding-top: 13px;
-        padding-bottom: 23px;
+        line-height: 26px;
     }
 
     .features__list {
@@ -211,6 +189,7 @@
         box-sizing: border-box;
         width: 33%;
         padding-top: 40px;
+        margin-right: 3px;
     }
 
     .features__feature-title {
@@ -219,8 +198,9 @@
         text-align: center;
     }
 
-    .features__description {
-        text-align: center;
+    .features__number {
+        padding-top: 13px;
+        padding-bottom: 23px;
     }
 
     .features__item--type-2 .features__description {
@@ -232,9 +212,8 @@
     }
 
     .features__item--type-2 {
-        align-items: center;
-        padding-left: 14%;
-        padding-right: 14%;
+        padding-left: 12%;
+        padding-right: 12%;
     }
 
     .features__item--house {
@@ -256,21 +235,10 @@
         padding-top: 158px;
     }
 
-    .features__item:nth-child(5) .features__item-specification {
-        padding-top: 43px;
-    }
-
-    .features__item--type-3 {
+    .features__item--type-3 .features__feature-title {
+        padding-top: 42px;
         padding-left: 20%;
         padding-right: 20%;
-    }
-
-    .features__item--type-3 .features__feature-title {
-        padding-top: 41px;
-    }
-    
-    .features__item--type-3 .features__description {
-        padding-bottom: 24px;
     }
 }
 
@@ -279,21 +247,133 @@
         padding-top: 55px;
         padding-left: 28%;
         padding-right: 28%;
-        padding-bottom: 41px;
+        padding-bottom: 42px;
     }
 
     .features__item-specification {
         padding-top: 48px;
-        
+        margin-right: 6px;
     }
 
     .features__item--type-1 .features__feature-title {
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 28%;
+        padding-right: 26%;
+    }
+
+    .features__number {
+        padding-top: 12px;
+        padding-left: 7px;
+        padding-bottom: 23px;
+    }
+
+    .features__item--type-1 .features__description {
+        padding-left: 5%;
+        padding-right: 3%;
     }
 
     .features__item-pic {
         display: flex;
         align-items: center;
+    }
+}
+
+// Pixel Perfect
+
+.features__item--gift br {
+    display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+    .features__item:first-child .features__item-specification {
+        padding-top: 72px;
+    }
+
+    .features__item--house .features__feature-title {
+        padding-top: 35px;
+    }
+
+    .features__item--burger .features__description {
+        padding-bottom: 35px;
+    }
+
+    .features__item:nth-child(5) .features__item-specification {
+        padding-bottom: 35px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .features__item--burger .features__description {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .features__item:nth-child(5) .features__item-specification {
+        padding-top: 43px;
+    }
+
+    .features__item:nth-last-of-type(2) .features__description {
+        padding-left: 17%;
+        padding-right: 19%;
+    }
+
+    .features__item:last-of-type .features__description {
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .features__item--gift br {
+        display: block;
+    }
+
+    .features__item--burger .features__description {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .features__item--gift .features__description {
+        padding-left: 13%;
+        padding-right: 13%;
+    }
+
+    .features__item:nth-child(5) .features__item-specification {
+        padding-top: 52px;
+        padding-left: 3.5%;
+        padding-right: 3.5%;
+    }
+
+    .features__item:nth-child(5) .features__description {
+        padding-left: 15%;
+        padding-right: 13%;
+    }
+
+    .features__item--type-3 .features__feature-title {
+        padding-left: 28%;
+        padding-right: 28%;
+    }
+    .features__item--type-3 .features__number {
+        padding-top: 13px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    .features__item--type-3 .features__description {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .features__item:nth-last-of-type(2) .features__description {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    .features__item:last-of-type .features__description {
+        padding-left: 13.7%;
+        padding-right: 14%;
+    }
+
+    .features__item:nth-child(5) .features__item-pic {
+        margin-top: 113px;
     }
 }

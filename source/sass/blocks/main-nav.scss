@@ -30,8 +30,8 @@
     }
 
     .main-nav__row {
-        height: 56px;
         position: relative;
+        height: 56px;
     }
 
     .main-nav__toggle {
@@ -50,9 +50,9 @@
         background-repeat: no-repeat;
     } 
     
-    .main-nav--closed .main-nav__toggle {
-        right: 19px;
-        top: 16px;
+    .main-nav__toggle--closed {
+        right: 18px;
+        top: 17px;
         left: auto;
         background-image: url(../../img/icon-cross.svg);
         background-repeat: no-repeat;
@@ -71,10 +71,6 @@
         opacity: 0.3;
     }
 
-    .main-nav__list li:last-child {
-        box-shadow: inset 0 0 10px 10px rgb(0, 0, 0);
-    }
-
     .main-nav__list a {
         position: relative;
         display: block;
@@ -89,21 +85,23 @@
         border-top: 1px solid rgba(255, 255, 255, 0.2);
         border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 
-        &:not(:first-child) {
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        &:not(:last-child) {
-            border-bottom: 1px solid rgba(1, 1, 1, 0.2);
-        }
-
         &:hover {
             background-color: $bg-blue-hover;
         }
 
         &:focus {
             background-color: $bg-blue-focus;
-        }  
+        }
+    }
+
+    .main-nav__item:first-of-type a {
+        border-top: none;
+        padding-top: 10px;
+    }
+
+    .main-nav__item:last-of-type a {
+        border-bottom: none;
+        box-shadow: inset 0 -15px 10px -17px $black;
     }
 
     .main-nav__list {
@@ -133,7 +131,8 @@
         }
 
         &:active {
-            color: rgba(0, 0, 0, 0.3);
+            color: $black;
+            opacity: 0.3;
         }  
     }
 
@@ -147,17 +146,15 @@
     }
 
     .main-nav__item--active a {
-        color: #766357;
+        color: $brown;
 
         &:hover,
         &:focus {
-
-            color: #604E43;
+            color: $darkbrown;
         }
 
         &:active {
-
-            color: #766357;
+            color: $brown;
             opacity: 0.3;
         }  
     }
