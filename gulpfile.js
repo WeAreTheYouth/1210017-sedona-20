@@ -1,58 +1,3 @@
-// const gulp = require("gulp");
-// const plumber = require("gulp-plumber");
-// const sourcemap = require("gulp-sourcemaps");
-// const sass = require("gulp-sass");
-// const postcss = require("gulp-postcss");
-// const autoprefixer = require("autoprefixer");
-// const sync = require("browser-sync").create();
-
-// // Styles
-
-// const styles = () => {
-//   return gulp.src("source/sass/style.scss")
-//     .pipe(plumber())
-//     .pipe(sourcemap.init())
-//     .pipe(sass())
-//     .pipe(postcss([
-//       autoprefixer()
-//     ]))
-//     .pipe(sourcemap.write("."))
-//     .pipe(gulp.dest("source/css"))
-//     .pipe(sync.stream());
-// }
-
-// exports.styles = styles;
-
-// // Server
-
-// const server = (done) => {
-//   sync.init({
-//     server: {
-//       baseDir: 'source'
-//     },
-//     cors: true,
-//     notify: false,
-//     ui: false,
-//   });
-//   done();
-// }
-
-// exports.server = server;
-
-// // Watcher
-
-// const watcher = () => {
-//   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-//   gulp.watch("source/*.html").on("change", sync.reload);
-// }
-
-// exports.default = gulp.series(
-//   styles, server, watcher
-// );
-
-
-/////////////////////////////////
-
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
@@ -82,7 +27,8 @@ const copy = () => {
       "source/img/**",
       "source/js/**",
       "source/*.ico",
-      "source/*.html"
+      "source/*.html",
+      "source/css/*.min.css"
   ], {
       base: "source"
   })
@@ -103,7 +49,7 @@ const styles = () => {
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
 }
 exports.styles = styles;
@@ -141,20 +87,26 @@ const server = (done) => {
   done();
 }
 
+exports.server = server;
+
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html", gulp.series("html"));
+  gulp.watch("source/*.html").on("change", sync.reload);
 }
 
 // Build
 
 const build = gulp.series(
   clean,
-  copy,
   styles,
+  copy,
   newwebp,
   sprite
 );
 exports.build = build;
+
+exports.default = gulp.series(
+  styles, server, watcher
+);
