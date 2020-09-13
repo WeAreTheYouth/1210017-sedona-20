@@ -82,7 +82,8 @@ const copy = () => {
       "source/img/**",
       "source/js/**",
       "source/*.ico",
-      "source/*.html"
+      "source/*.html",
+      "source/css/*.min.css"
   ], {
       base: "source"
   })
@@ -103,7 +104,7 @@ const styles = () => {
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
 }
 exports.styles = styles;
@@ -141,20 +142,26 @@ const server = (done) => {
   done();
 }
 
+exports.server = server;
+
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html", gulp.series("html"));
+  gulp.watch("source/*.html").on("change", sync.reload);
 }
 
 // Build
 
 const build = gulp.series(
   clean,
-  copy,
   styles,
+  copy,
   newwebp,
   sprite
 );
 exports.build = build;
+
+exports.default = gulp.series(
+  styles, server, watcher
+);
