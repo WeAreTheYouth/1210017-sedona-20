@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Отзыв</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
 
@@ -14,10 +16,10 @@
     <div class="container">
 
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--nojs">
           <div class="main-nav__row">
             <a href="index.html" class="page-header__logo">
-              <svg class="logo" width="186.643px" height="96.425px" role="img" aria-label="логотип Седона">
+              <svg class="logo" width="187" height="96" role="img" aria-label="логотип Седона">
                 <use class="logo__frame" xlink:href="img/sprite.svg#logo-frame"></use>
                 <use class="logo__sedona" xlink:href="img/sprite.svg#logo-sedona"></use>
                 <use class="logo__bridge" xlink:href="img/sprite.svg#logo-bridge"></use>
@@ -48,7 +50,7 @@
 
       <main>
         <div class="intro intro--page-inner">
-          <img class="intro__img " src="img/text-sedona.svg" width="282" height="49">
+          <img class="intro__img " src="img/text-sedona.svg" width="282" height="49" alt="Sedona">
         </div>
 
         <section class="review">
@@ -66,11 +68,11 @@
                 <label for="firstname">Имя*:</label>
                 <input type="text" name="firstname" id="firstname" placeholder="Петр" required>
               </div>
-              <div class="form__field"> 
+              <div class="form__field">
                 <label for="lastname">Фамилия*:</label>
                 <input type="text" name="lastname" id="lastname" placeholder="Иванов" required>
-              </div> 
-              <div class="form__field">  
+              </div>
+              <div class="form__field">
                 <label for="patronymic">Отчество:</label>
                 <input type="text" name="patronymic" id="patronymic" placeholder="Александрович">
               </div>
@@ -102,15 +104,15 @@
               <legend class="form__fieldset-title">Ваше общее впечатление:</legend>
                 <div class="form__field">
                   <input type="radio" name="impressions" value="positive" id="filter-positive" checked>
-                  <label for="filter-positive">Скорее положительное</label>
+                  <label for="filter-positive" tabindex="0">Скорее положительное</label>
                 </div>
                 <div class="form__field">
                   <input type="radio" name="impressions" value="negative" id="filter-negative">
-                  <label for="filter-negative">Скорее отрицательное</label>
+                  <label for="filter-negative" tabindex="0">Скорее отрицательное</label>
                 </div>
                 <div class="form__field">
                   <input type="radio" name="impressions" value="uncertain" id="filter-uncertain">
-                  <label for="filter-uncertain">Затрудняюсь ответить</label>
+                  <label for="filter-uncertain" tabindex="0">Затрудняюсь ответить</label>
                 </div>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--type-4">
@@ -118,19 +120,19 @@
               <div class="form__checkbox">
                 <div class="form__field">
                   <input type="checkbox" name="bridge" id="filter-bridge" checked>
-                  <label for="filter-bridge">Мост Дьявола</label>
+                  <label for="filter-bridge" tabindex="0">Мост Дьявола</label>
                 </div>
                 <div class="form__field">
                   <input type="checkbox" name="mountain" id="filter-mountain" checked>
-                  <label for="filter-mountain">Гора-Колокол</label>
+                  <label for="filter-mountain" tabindex="0">Гора-Колокол</label>
                 </div>
                 <div class="form__field">
                   <input type="checkbox" name="park" id="filter-park" checked>
-                  <label for="filter-park">Слайд-парк</label>
+                  <label for="filter-park" tabindex="0">Слайд-парк</label>
                 </div>
                 <div class="form__field">
                   <input type="checkbox" name="rocks" id="filter-rocks">
-                  <label for="filter-rocks">Красные скалы</label>
+                  <label for="filter-rocks" tabindex="0">Красные скалы</label>
                 </div>
               </div>
             </fieldset>
@@ -140,7 +142,7 @@
                 <textarea name="emotion" id="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
               </fieldset>
-            <button class="button form--button" type="submit">Отправить отзыв</button>
+            <button class="button form__button" type="submit">Отправить отзыв</button>
             <span class="form__memo">* — обязательные поля</span>
           </form>
         </section>
@@ -158,7 +160,7 @@
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_en">
                 <span class="visually-hidden">Мы в Твиттере</span>
-                <svg width="17.5px" height="14.663px">
+                <svg width="18" height="15">
                   <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -166,7 +168,7 @@
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
-                <svg width="8.672px" height="18.944px">
+                <svg width="9" height="19">
                   <use xlink:href="img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -174,7 +176,7 @@
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
                 <span class="visually-hidden">Мы в Ютубе</span>
-                <svg width="19.979px" height="14.015px">
+                <svg width="20" height="14">
                   <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
@@ -219,14 +221,6 @@
     </section>
 
     <script src="js/menu.js"></script>
-
-    <!-- <script>
-      const toggle = document.querySelector('[aria-pressed]');  
-        toggle.addEventListener('click', (e) => {
-        let pressed = e.target.getAttribute('aria-pressed') === 'true';
-        e.target.setAttribute('aria-pressed', String(!pressed));
-      });
-    </script> -->
 
   </body>
 </html>

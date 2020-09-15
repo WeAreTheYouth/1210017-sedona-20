@@ -28,7 +28,7 @@ const copy = () => {
       "source/js/**",
       "source/*.ico",
       "source/*.html",
-      "source/css/*.min.css"
+      "source/css/*.css"
   ], {
       base: "source"
   })
@@ -108,5 +108,5 @@ const build = gulp.series(
 exports.build = build;
 
 exports.default = gulp.series(
-  styles, server, watcher
+  build, server, watcher
 );

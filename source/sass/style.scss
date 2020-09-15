@@ -1,9 +1,7 @@
 @import "variables.scss";
 @import "fonts.scss";
 @import "scaffolding.scss";
-@import "mixins.scss";
 @import "blocks/button.scss";
-
 @import "blocks/container.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-header.scss";
@@ -13,17 +11,14 @@
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
-
 @import "blocks/intro.scss";
 @import "blocks/gallery.scss";
 @import "blocks/picture-card.scss";
 @import "blocks/video.scss";
 @import "blocks/videoplayer.scss";
-
 @import "blocks/review.scss";
 @import "blocks/form.scss";
 @import "blocks/modal.scss";
 @import "blocks/modal-error.scss";
 @import "blocks/modal-succes.scss";
 @import "blocks/visually-hidden.scss";
-

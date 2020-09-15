@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная | Sedona — онлайн-сервис для бронирования отелей в Седоне</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
 
@@ -13,12 +15,11 @@
 
     <div class="container">
 
-      
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--nojs">
           <div class="main-nav__row">
             <a class="page-header__logo">
-              <svg class="logo" width="186.643px" height="96.425px" role="img" aria-label="логотип Седона">
+              <svg class="logo" width="187" height="96" role="img" aria-label="логотип Седона">
                 <use class="logo__frame" xlink:href="img/sprite.svg#logo-frame"></use>
                 <use class="logo__sedona" xlink:href="img/sprite.svg#logo-sedona"></use>
                 <use class="logo__bridge" xlink:href="img/sprite.svg#logo-bridge"></use>
@@ -64,7 +65,7 @@
             </p>
           </div>
           <div class="features__main">
-            <ol class="features__list"> 
+            <ol class="features__list">
               <li class="features__item features__item--type-1">
                 <div class="features__item-specification">
                   <h3 class="features__feature-title">Настоящий городок</h3>
@@ -79,7 +80,7 @@
 
                     <source media="(min-width: 1280px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
-                    <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="100%" alt="Город Седона">
+                    <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Город Седона">
                   </picture>
                 </div>
               </li>
@@ -109,7 +110,7 @@
 
                     <source media="(min-width: 1280px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
-                    <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="100%" alt="Мост дьявола">
+                    <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
                   </picture>
                 </div>
               </li>
@@ -138,7 +139,7 @@
             <p class="booking__title">Заинтересовались?</p>
             <p class="booking__intro">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
-          <button class="button booking--button">Найти гостиницу</button>
+          <a href="search.html" class="button booking__button">Найти гостиницу</a>
           <div class="booking__map">
             <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180505998695!2d-111.83015811897525!3d34.85437338099741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1597664302766!5m2!1sru!2sru" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
           </div>
@@ -157,7 +158,7 @@
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_en">
                 <span class="visually-hidden">Мы в Твиттере</span>
-                <svg width="17.5px" height="14.663px">
+                <svg width="18" height="15">
                   <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -165,7 +166,7 @@
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
-                <svg width="8.672px" height="18.944px">
+                <svg width="9" height="19">
                   <use xlink:href="img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -173,7 +174,7 @@
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
                 <span class="visually-hidden">Мы в Ютубе</span>
-                <svg width="19.979px" height="14.015px">
+                <svg width="20" height="14">
                   <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>

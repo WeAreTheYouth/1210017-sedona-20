@@ -1,15 +1,15 @@
-.page-header {
-}
+// .page-header {
+// }
 
 .page-header__logo {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    margin-left: -93px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -93px;
 }
 
 @media (min-width: $tablet-width) {
-    .page-header__logo {
-        top: 0;
-    }
+  .page-header__logo {
+    top: 0;
+  }
 }

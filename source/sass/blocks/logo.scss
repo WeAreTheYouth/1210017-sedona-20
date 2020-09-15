@@ -1,30 +1,30 @@
-.logo {
-}
+// .logo {
+// }
 
 .logo__frame {
-    display: none;
+  display: none;
 }
 
 .logo__bridge {
-    display: none;
+  display: none;
 }
 
 .logo__clouds {
-    display: none;
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
-    .logo__clouds {
-        display: block;
-    }
+  .logo__clouds {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {
-    .logo__frame {
-        display: block;
-    }
-    
-    .logo__bridge {
-        display: block;
-    }
+  .logo__frame {
+    display: block;
+  }
+
+  .logo__bridge {
+    display: block;
+  }
 }

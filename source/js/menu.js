@@ -3,7 +3,7 @@ var navToggle = document.querySelector('.main-nav__toggle');
 var navList = document.querySelector('.main-nav__list');
 
 navMain.classList.remove('main-nav--nojs');
-      
+
 navToggle.addEventListener('click', function() {
   if (navList.classList.contains('main-nav__list--shown')) {
     navList.classList.remove('main-nav__list--shown');

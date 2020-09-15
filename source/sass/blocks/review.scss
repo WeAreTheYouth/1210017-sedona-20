@@ -1,55 +1,55 @@
 .review__header {
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 36px;
-    padding-left: 2.5%;
-    padding-bottom: 17px;
-    padding-right: 2.5%;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 36px;
+  padding-left: 2.5%;
+  padding-bottom: 17px;
+  padding-right: 2.5%;
 }
 
 .review__title {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: bold;
-    margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .review__intro {
-    color: $darkgrey;
-    font-size: 14px;
-    line-height: 24px;
-    padding-top: 28px;
-    margin: 0;
+  color: $darkgrey;
+  font-size: 14px;
+  line-height: 24px;
+  padding-top: 28px;
+  margin: 0;
 }
 
 @media (max-width: $mobile-width-only) {
-    .review__header {
-        border-bottom: 1px solid $softgrey;
-    }
+  .review__header {
+    border-bottom: 1px solid $softgrey;
+  }
 }
 
 @media (min-width: $tablet-width) {
-    .review__header {
-        padding-top: 62px;
-        padding-left: 21.5%;
-        padding-right: 21.5%;
-        padding-bottom: 62px;
-    }
+  .review__header {
+    padding-top: 62px;
+    padding-left: 21.5%;
+    padding-right: 21.5%;
+    padding-bottom: 62px;
+  }
 
-    .review__title {
-        font-size: 30px;
-    }
+  .review__title {
+    font-size: 30px;
+  }
 
-    .review__intro {
-        padding-top: 33px;
-    }
+  .review__intro {
+    padding-top: 33px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-    .review__header {
-        padding-top: 112px;
-        padding-left: 31.5%;
-        padding-right: 31.5%;
-        padding-bottom: 56px;
-    }
+  .review__header {
+    padding-top: 112px;
+    padding-left: 31.5%;
+    padding-right: 31.5%;
+    padding-bottom: 56px;
+  }
 }

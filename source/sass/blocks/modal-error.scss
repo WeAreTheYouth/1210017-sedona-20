@@ -1,23 +1,23 @@
 .modal-error {
-    width: 320px;
-    height: 280px;
-    top: 35%;
-    left: 50%;
-    margin-left: -160px;
+  width: 320px;
+  height: 280px;
+  top: 35%;
+  left: 50%;
+  margin-left: -160px;
 }
 
 .modal-error--button {
-    margin: 22px auto 0;
+  margin: 22px auto 0;
 }
 
 @media (min-width: $tablet-width) {
-    .modal-error {
-        width: 400px;
-        height: 347px;
-        margin-left: -200px;
-    }
+  .modal-error {
+    width: 400px;
+    height: 347px;
+    margin-left: -200px;
+  }
 
-    .modal-error--button {
-        margin: 37px auto 0;
-    }
+  .modal-error--button {
+    margin: 37px auto 0;
+  }
 }
