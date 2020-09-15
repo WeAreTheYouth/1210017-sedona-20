@@ -7,10 +7,10 @@ const autoprefixer = require("autoprefixer");
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
-const sync = require("browser-sync").create();
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const sync = require("browser-sync").create();
 
 // Clean
 
@@ -78,7 +78,7 @@ exports.sprite = sprite;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -100,7 +100,6 @@ const watcher = () => {
 
 const build = gulp.series(
   clean,
-  styles,
   copy,
   newwebp,
   sprite
