@@ -4,13 +4,13 @@ const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
+const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
-const sync = require("browser-sync").create();
 
 // Clean
 
@@ -23,14 +23,13 @@ exports.clean = clean;
 
 const copy = () => {
   return gulp.src([
-      "source/fonts/**/*.{woff,woff2}",
-      "source/img/**",
-      "source/js/**",
-      "source/*.ico",
-      "source/*.html",
-      "source/css/*.css"
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/js/**",
+    "source/*.ico",
+    "source/*.html",
   ], {
-      base: "source"
+    base: "source"
   })
   .pipe(gulp.dest("build"));
 };
@@ -45,11 +44,12 @@ const styles = () => {
     .pipe(sass())
     .pipe(postcss([
        autoprefixer()
-     ]))
+    ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
-    .pipe(rename("styles.min.css"))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 exports.styles = styles;
@@ -58,18 +58,18 @@ exports.styles = styles;
 
 const newwebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
-      .pipe(webp({quality: 90}))
-      .pipe(gulp.dest("build/img"))
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img"))
 }
-exports.newwebp = newwebp;
+exports.webp = newwebp;
 
 // Sprite
 
 const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
-      .pipe(svgstore())
-      .pipe(rename("sprite.svg"))
-      .pipe(gulp.dest("build/img"))
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"))
 }
 exports.sprite = sprite;
 
@@ -86,7 +86,6 @@ const server = (done) => {
   });
   done();
 }
-
 exports.server = server;
 
 // Watcher
@@ -100,9 +99,9 @@ const watcher = () => {
 
 const build = gulp.series(
   clean,
+  styles,
   copy,
-  newwebp,
-  sprite
+  newwebp
 );
 exports.build = build;
 
